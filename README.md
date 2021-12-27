@@ -1,2 +1,12 @@
 # vntero-dot-com
-Personal portfolio website built with React
+Personal portfolio website built with React! 
+
+# MVP
+- Welcome page with a brief intro about me
+- Projects page
+- Social icons (LinkedIn, Github and Email)
+
+# Backlog
+- Boilerplates/templates for helping others start personal projects
+- Blockchain educational content (Bitcoin, Smart Contracts and DeFi)
+- Philosophical quote of the day
