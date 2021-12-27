@@ -1,5 +1,5 @@
 # vntero-dot-com
-Personal portfolio website built with React! 
+Personal portfolio website built with react and mui! 
 
 # MVP
 - Welcome page with a brief intro about me
