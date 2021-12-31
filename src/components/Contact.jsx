@@ -1,10 +1,12 @@
-function Message() {
+import React from "react"
+
+function Contact() {
     return (
         <div>
-            <h1>MESSAGE</h1>
+            <h1>CONTACT</h1>
             <h3>This page will lodad a form for contact. Fill out the form and press submit to send a request</h3>
         </div>
     )
 }
 
-export default Message
+export default Contact
