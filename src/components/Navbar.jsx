@@ -3,12 +3,12 @@ import React from "react"
 
 function Navbar() {
     return (
-        <nav>
-            <Link to="/"><h4>vntero.com</h4></Link> 
-            <Link to="/about"><p>About Me</p></Link>
-            <Link to="/projects"><p>Projects</p></Link>
-            <Link to="/contact"><p>Contact</p></Link>     
-        </nav>
+        <div className="navbar">
+            <Link to="/"><img alt="vntero.com" src="aries.png" height={20} width={20}/></Link> 
+            <Link style={{textDecoration: 'none'}} to="/about">About Me</Link>
+            <Link style={{textDecoration: 'none'}} to="/projects">Projects</Link>
+            <Link style={{textDecoration: 'none'}} to="/contact">Contact</Link>     
+        </div>
     )
 }
 
