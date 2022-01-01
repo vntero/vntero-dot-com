@@ -43,3 +43,15 @@
   justify-content: space-around;
   padding: 10px;
 }
+
+.div-body {
+  height: 500px;
+}
+
+.footer {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
