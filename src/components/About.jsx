@@ -5,8 +5,8 @@ function About() {
     return (
         <div className="div-body">
             <div>
-                <h1>Hi. I'm Hugo. A full stack web developer.</h1>
-                <h1>I am always aiming for minimalism with a focus on optimization.
+                <h1>Hi. I'm Hugo. A Full Stack Web Developer.</h1>
+                <h1>Always aiming for a minimalist yet personalised end-product.
                 Looking to build and collaborate on beautiful, engaging and 
                 functional projects for the World Wide Web.</h1>
             </div>
