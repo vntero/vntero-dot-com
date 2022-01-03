@@ -9,7 +9,7 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
-import Welcome from './components/Welcome';
+import Unrelated from './components/Unrelated';
 
 function App() {
   return (
@@ -17,10 +17,11 @@ function App() {
       <Navbar/>
 
       <Routes>
-        <Route path="/" element={<Welcome/>}/>
+        <Route path="/" element={<About/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/unrelated" element={<Unrelated/>}/>
       </Routes>
 
       <Footer/>

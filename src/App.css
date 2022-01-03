@@ -45,7 +45,7 @@
 }
 
 .div-body {
-  height: 500px;
+  padding: 50px;
 }
 
 .footer {
@@ -62,4 +62,10 @@ a {
 
 input {
   width: 374px;
+}
+
+.statement {
+  display: flex;
+  justify-content:center;
+  width: 50%;
 }
