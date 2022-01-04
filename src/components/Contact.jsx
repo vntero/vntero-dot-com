@@ -1,5 +1,6 @@
-import { Button, Paper, TextField } from "@mui/material"
+import { Button, TextField } from "@mui/material"
 import React from "react"
+import { Link } from "react-router-dom"
 
 
 function Contact() {
@@ -10,12 +11,9 @@ function Contact() {
                 <form action="" id="message-form">
                     <TextField fullWidth id="outlined-textarea" label="Name" placeholder="Hi, stranger" variant="outlined" /> <br />
                     <label htmlFor="BLANK SPACE"> </label> <br />
-
             
                     <TextField fullWidth id="outlined-textarea" label="Email" placeholder="Enter your email address" type="email" /> <br />
                     <label htmlFor="BLANK SPACE"> </label> <br />
-
-                    
 
                     <TextField fullWidth id="outlined-textarea" label="Message" placeholder="What's on your mind?" multiline rows={6}/> <br />
                     <label htmlFor="BLANK SPACE"> </label> <br />
