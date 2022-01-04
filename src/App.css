@@ -53,8 +53,10 @@
   padding: 10px;
 }
 
-a {
+a, a:focus, a:active{
   text-decoration: none;
+  color: inherit;
+  padding: 5px;
 }
 
 input {
@@ -95,4 +97,23 @@ input {
 
 .grey {
   color: grey;
+}
+
+.div-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
