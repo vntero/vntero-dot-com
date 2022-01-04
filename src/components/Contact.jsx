@@ -1,27 +1,30 @@
+import { Button, Paper, TextField } from "@mui/material"
 import React from "react"
+
 
 function Contact() {
     return (
         <div className="div-body">
-            <div className="contact-form">
+            <h2>Is there something that you'd like to share with me?</h2>
+
                 <form action="" id="message-form">
-                    <label htmlFor="text">Name:</label> <br />
-                    <input type="text" id="name" name="name"/> <br />
+                    <TextField fullWidth id="outlined-textarea" label="Name" placeholder="Hi, stranger" variant="outlined" /> <br />
                     <label htmlFor="BLANK SPACE"> </label> <br />
 
-                    <label htmlFor="email">Email:</label> <br />
-                    <input type="email" id="email" name="email"/> <br />
+            
+                    <TextField fullWidth id="outlined-textarea" label="Email" placeholder="Enter your email address" type="email" /> <br />
                     <label htmlFor="BLANK SPACE"> </label> <br />
 
-                    <label htmlFor="message">Message:</label> <br />
-                    <textarea name="message" id="message" cols="45" rows="10" placeholder="What's on your mind?"></textarea> <br />
+                    
+
+                    <TextField fullWidth id="outlined-textarea" label="Message" placeholder="What's on your mind?" multiline rows={6}/> <br />
                     <label htmlFor="BLANK SPACE"> </label> <br />
 
-                    <button type="submit" form="message-form" value="Submit">Send!</button>
+                    <Button type="submit" form="message-form" value="Submit">Send</Button>
                 </form>
-            </div>
         </div>
     )
 }
 
 export default Contact
+

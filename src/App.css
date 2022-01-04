@@ -46,7 +46,7 @@
 }
 
 .div-body {
-  padding: 50px;
+  padding: 30px;
 }
 
 .footer {
@@ -57,10 +57,6 @@ a {
   text-decoration: none;
 }
 
-.contact-form {
-  padding: 50px;
-}
-
 input {
   width: 374px;
 }
@@ -69,4 +65,26 @@ input {
   display: flex;
   justify-content:center;
   width: 50%;
+}
+
+.unrelated {
+  display: flex;
+}
+
+.div-unrelated {
+  display: flex;
+  padding: 30px;
+  max-width: 50%;
+}
+
+.blue {
+  color: #1C6DD0;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color:seagreen;
 }
