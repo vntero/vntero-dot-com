@@ -44,14 +44,7 @@ const Navbar = () => {
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
+            <IconButton onClick={handleOpenNavMenu} color="inherit">
               <MenuIcon />
             </IconButton>
             <Menu
@@ -74,14 +67,16 @@ const Navbar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography>{page}</Typography>
+                  {page}
                 </MenuItem>
               ))}
             </Menu>
           </Box>
+
           <Typography sx={{display: { xs: 'flex', md: 'none' }}}>
             <Link to="/"><img alt="vntero.com" src="aries.png" height={20} width={20}/></Link> 
           </Typography>
+          
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Typography 

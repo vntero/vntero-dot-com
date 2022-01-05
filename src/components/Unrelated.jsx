@@ -8,7 +8,7 @@ function Unrelated() {
     return (
         <div className="unrelated">
             <div className="div-unrelated">
-                <h1 style={{fontSize: 60}}>A compilation of what my eyes and ears capture when I'm not coding.</h1>
+                <h1>A compilation of what my <span className='blue'>eyes</span> and <span className='green'>ears</span> capture when I'm not coding.</h1>
             </div>
             <div className="div-unrelated">
             <Grid style={{marginTop: 20}} container display='flex' spacing={2} direction="row" justifyContent="space-around">
