@@ -5,16 +5,16 @@ import React from "react"
 function Contact() {
     return (
         <div className="div-body">
-            <h2>Is there something that you'd like to share with me?</h2>
+            <h1>Send me a message.</h1>
 
-                <form action="" id="message-form">
-                    <TextField fullWidth id="outlined-textarea" label="Name" placeholder="Hi, stranger" variant="outlined" /> <br />
+                <form action="/messages" method="post" id="message-form">
+                    <TextField required fullWidth id="outlined-textarea" label="Name" placeholder="Hi, stranger" variant="outlined" /> <br />
                     <label htmlFor="BLANK SPACE"> </label> <br />
             
-                    <TextField fullWidth id="outlined-textarea" label="Email" placeholder="Enter your email address" type="email" /> <br />
+                    <TextField required fullWidth id="outlined-textarea" label="Email" placeholder="Enter your email address" type="email" /> <br />
                     <label htmlFor="BLANK SPACE"> </label> <br />
 
-                    <TextField fullWidth id="outlined-textarea" label="Message" placeholder="What's on your mind?" multiline rows={6}/> <br />
+                    <TextField required fullWidth id="outlined-textarea" label="Message" placeholder="What's on your mind?" multiline rows={6}/> <br />
                     <label htmlFor="BLANK SPACE"> </label> <br />
 
                     <Button type="submit" form="message-form" value="Submit">Send</Button>

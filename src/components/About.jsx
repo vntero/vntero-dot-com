@@ -6,7 +6,7 @@ function About() {
     return (
         <div className="div-body">
             <div>
-                <h1>Hi. I'm Hugo.</h1>
+                <h2>Hi. I'm Hugo.</h2>
                 <div className="div-avatar">
                 <Avatar alt="Hugo Antero" src="hugo.png" sx={{ width: 90, height: 90 }} />
                 </div>
@@ -33,6 +33,7 @@ function About() {
                 <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img alt="MongoDB" src="mongodb.png" height={50} width={80}/></a>
                 <a href="https://mui.com/" target="_blank" rel="noreferrer"><img alt="Material-UI" src="mui.png" height={50} width={50}/></a>
                 <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img alt="Bootstrap" src="bootstrap.png" height={50} width={50}/></a>
+                <a href="https://axios-http.com/" target="_blank" rel="noreferrer"><img alt="Axios" src="axios.png" height={15} width={80}/></a>
                 <a href="https://expressjs.com/" target="_blank" rel="noreferrer"><img alt="Express" src="express.png" height={50} width={80}/></a>
                 <a href="https://handlebarsjs.com/" target="_blank" rel="noreferrer"><img alt="Handlebars" src="handlebars.png" height={20} width={65}/></a>
             </div>
