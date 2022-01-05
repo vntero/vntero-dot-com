@@ -16,6 +16,12 @@ function About() {
                 <span className="blue"> beautiful</span>, <span className="red">engaging</span> and <span className="green">functional</span> <br />
                 projects for the World Wide Web.</h1>
             </div>
+
+            <label htmlFor="BLANK SPACE"></label><br />
+            <label htmlFor="BLANK SPACE"></label><br />
+
+            <h2>Tech stack:</h2>
+
             <div className="div-skills">
                 <a href="https://www.javascript.com/" target="_blank" rel="noreferrer"><img alt="JavaScript" src="javascript.png" height={50} width={50}/></a>
                 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img alt="React" src="react.png" height={50} width={50}/></a>

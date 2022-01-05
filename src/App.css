@@ -56,7 +56,6 @@
 a, a:focus, a:active{
   text-decoration: none;
   color: inherit;
-  padding: 5px;
 }
 
 input {
@@ -114,6 +113,6 @@ input {
 .div-skills {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 20px;
 }

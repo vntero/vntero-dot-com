@@ -3,12 +3,11 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MobileStepper from '@mui/material/MobileStepper';
 import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
-import { Link } from "react-router-dom";
+
 // import { autoPlay } from 'react-swipeable-views-utils';
 
 // const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
@@ -18,7 +17,7 @@ const images = [
     label: 'Buszinga!',
     imgPath: 'buszinga.png',
     open: <a href="https://vntero.github.io/buszinga/" target="_blank" rel="noreferrer">Open in a new tab</a>,
-    source: <a href="https://github.com/vntero/buszinga" target="_blank" rel="noreferrer">View source code on github</a>,
+    source: <a href="https://github.com/vntero/buszinga" target="_blank" rel="noreferrer">View source code</a>,
   },
   {
     label: 'WoD[i]-WoDpicker',
@@ -67,7 +66,7 @@ function Projects() {
             </h1>
 
             <div className="div-carousel">
-                <Box sx={{ maxWidth: 600, flexGrow: 1 }}>
+                <Box sx={{ maxWidth: 800, flexGrow: 1 }}>
                     <Paper
                         square
                         elevation={3}
@@ -101,9 +100,9 @@ function Projects() {
                             <Box
                                 component="img"
                                 sx={{
-                                height: 275,
+                                maxHeight: 400,
                                 display: 'block',
-                                maxWidth: 600,
+                                maxWidth: 800,
                                 overflow: 'hidden',
                                 width: '100%',
                                 }}
