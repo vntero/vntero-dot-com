@@ -31,9 +31,9 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" style={{ background: 'white', color: 'black'}}>
+    <AppBar elevation={1} position="static" style={{ background: 'white', color: 'black'}}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar variant="dense" disableGutters >
           <Typography
             variant="h6"
             noWrap

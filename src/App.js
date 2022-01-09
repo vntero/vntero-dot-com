@@ -10,7 +10,7 @@ import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
 import Unrelated from './components/Unrelated';
-import Messages from './components/Messages';
+import Message from './components/Message';
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/unrelated" element={<Unrelated/>}/>
-        <Route path="/messages" element={<Messages/>}/>
+        <Route path="/message" element={<Message/>}/>
       </Routes>
 
       <Footer/>

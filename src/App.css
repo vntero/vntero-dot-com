@@ -50,7 +50,9 @@
 }
 
 .footer {
-  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 a, a:focus, a:active{
@@ -97,6 +99,11 @@ input {
 
 .grey {
   color: grey;
+}
+
+.pink {
+  margin-top: 50px;
+  color: orange;
 }
 
 .div-carousel {

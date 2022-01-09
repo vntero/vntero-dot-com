@@ -6,6 +6,9 @@ import {Grid} from '@material-ui/core/'
 
 function Unrelated() {
     return (
+        <>
+        <h1 className='pink'>This special page is under construction...</h1>
+        
         <div className="unrelated">
             <div className="div-unrelated">
                 <h1>A compilation of what my <span className='blue'>eyes</span> and <span className='green'>ears</span> capture when I'm not coding.</h1>
@@ -19,7 +22,7 @@ function Unrelated() {
                         </Typography>
 
                         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                        Views and still life
+                        Views and Still Life
                         </Typography>
                     </CardContent>
                 </Card>
@@ -31,14 +34,14 @@ function Unrelated() {
                         </Typography>
                         
                         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                        Allusion to Kierkegaard, <br /> 
-                        Dostoyevski, Hesse, <br /> 
-                        Beckett and many more
+                        Kierkegaard, Hesse, <br /> 
+                        Beckett, Dostoevsky<br /> 
+                        and many more
                         </Typography>
                     </CardContent>
                 </Card> 
 
-                <Card style={{margin: 10}} sx={{ minWidth: 200, maxHeight: 100 }}>
+                <Card style={{margin: 10}} sx={{ minWidth: 200, maxHeight: 150 }}>
                     <CardContent>
                         
                         <Typography variant="h5" component="div">
@@ -46,27 +49,14 @@ function Unrelated() {
                         </Typography>
                        
                         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                        Bitcoin is freedom
+                        Bitcoin, Smart Contracts, DeFi and Web3
                         </Typography>
                     </CardContent>
                 </Card>
-                
-                <Card style={{margin: 10}} sx={{ minWidth: 200, maxHeight: 120 }}>
-                    <CardContent>
-                        <Typography variant="h5" component="div">
-                        Books
-                        </Typography>
-                        
-                        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                        Books on books <br /> on books on books
-                        </Typography>
-                    </CardContent>  
-                </Card>
-                
             </Grid>
             </div>
         </div>
-        
+        </>
     )
 }
 

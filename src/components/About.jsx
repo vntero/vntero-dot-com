@@ -8,7 +8,7 @@ function About() {
             <div>
                 <h2>Hi. I'm Hugo.</h2>
                 <div className="div-avatar">
-                <Avatar alt="Hugo Antero" src="hugo.png" sx={{ width: 90, height: 90 }} />
+                <Avatar alt="Hugo Antero" src="hugo.png" sx={{ width: 100, height: 100 }} />
                 </div>
 
                 <h1>I am Full Stack Web Developer <br />
