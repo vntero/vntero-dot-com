@@ -10,8 +10,7 @@ import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
 import Unrelated from './components/Unrelated';
-import Message from './components/Message';
-
+import Thanks from './components/Thanks';
 
 function App() {
   return (
@@ -24,7 +23,7 @@ function App() {
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/unrelated" element={<Unrelated/>}/>
-        <Route path="/message" element={<Message/>}/>
+        <Route path="/thanks" element={<Thanks/>}/>
       </Routes>
 
       <Footer/>

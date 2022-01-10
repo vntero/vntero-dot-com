@@ -124,3 +124,8 @@ input {
   justify-content: space-evenly;
   padding: 20px;
 }
+
+.div-thanks{
+  margin: 100px;
+  align-items: center;
+}

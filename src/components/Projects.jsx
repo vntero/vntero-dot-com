@@ -13,6 +13,13 @@ import SwipeableViews from 'react-swipeable-views';
 // const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
+{
+    label: 'cafeaulait.ch',
+    imgPath:
+        'cafeaulait.png',
+        open: <a href="https:cafeaulait.ch" target="_blank" rel="noreferrer">Open in a new tab</a>,
+        source: <a href="https://github.com/vntero" target="_blank" rel="noreferrer">View source code</a>,
+    },
   {
     label: 'Buszinga!',
     imgPath: 'buszinga.png',
@@ -30,13 +37,6 @@ const images = [
     imgPath: 'clique.png',
     open: <a href="https://google.com" target="_blank" rel="noreferrer">Open in a new tab</a>,
     source: <a href="https://github.com/vntero/clique-client" target="_blank" rel="noreferrer">View source code</a>,
-  },
-  {
-    label: 'cafeaulait.ch',
-    imgPath:
-      'cafeaulait.png',
-      open: <a href="https:cafeaulait.ch" target="_blank" rel="noreferrer">Open in a new tab</a>,
-      source: <a href="https://github.com/vntero" target="_blank" rel="noreferrer">View source code</a>,
   }
 ];
 
@@ -113,11 +113,27 @@ function Projects() {
                         </div>
                         ))}
                     </SwipeableViews>
+                    
+                    <Paper
+                        square
+                        elevation={0}
+                        sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-around',
+                        height: 50,
+                        pl: 2,
+                        bgcolor: 'background.default',
+                        }}
+                    >
+    
+                    </Paper>
 
                     <MobileStepper
                         steps={maxSteps}
                         position="static"
                         activeStep={activeStep}
+                        elevation={0}
                         nextButton={
                         <Button
                             size="small"
@@ -145,7 +161,6 @@ function Projects() {
                             Back
                         </Button>
                         }
-                        
                     />
                     </Box>
             </div>
