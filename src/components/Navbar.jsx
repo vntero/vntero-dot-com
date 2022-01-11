@@ -11,12 +11,13 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@material-ui/icons/Menu'
 import Container from '@mui/material/Container';
 import MenuItem from '@mui/material/MenuItem';
+import Button from '@mui/material/Button';
 
 const pages = [
-<Link style={{textDecoration: 'none', color: 'black'}} to="/">About Me</Link>, 
-<Link style={{textDecoration: 'none', color: 'black'}} to="/projects">Projects</Link>, 
-<Link style={{textDecoration: 'none', color: 'black'}} to="/contact">Contact</Link>,
-<Link style={{textDecoration: 'none', color: 'black'}} to="/unrelated">Unrelated</Link>
+<Link style={{textDecoration: 'none', color: 'black'}} to="/"><Button sx={{ my: 1, display: 'block', textTransform: 'lowercase' }}>About</Button></Link>, 
+<Link style={{textDecoration: 'none', color: 'black'}} to="/projects"><Button sx={{ my: 1, display: 'block', textTransform: 'lowercase' }}>Projects</Button></Link>, 
+<Link style={{textDecoration: 'none', color: 'black'}} to="/contact"><Button sx={{ my: 1, display: 'block', textTransform: 'lowercase' }}>Contact</Button></Link>,
+<Link style={{textDecoration: 'none', color: 'black'}} to="/unrelated"><Button sx={{ my: 1, display: 'block', textTransform: 'lowercase' }}>Unrelated</Button></Link>
 ];
 
 const Navbar = () => {
@@ -40,7 +41,7 @@ const Navbar = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            <Link to="/"><img alt="vntero.com" src="aries.png" height={20} width={20}/></Link> 
+            <Link to="/"><img alt="vntero.com" src="aries.png" height={35} width={35}/></Link> 
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -74,7 +75,7 @@ const Navbar = () => {
           </Box>
 
           <Typography sx={{display: { xs: 'flex', md: 'none' }}}>
-            <Link to="/"><img alt="vntero.com" src="aries.png" height={20} width={20}/></Link> 
+            <Link to="/"><img alt="vntero.com" src="aries.png" height={35} width={35}/></Link> 
           </Typography>
           
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
@@ -82,7 +83,6 @@ const Navbar = () => {
               <Typography 
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ flexGrow: 1 }}
               >
                 {page}
               </Typography>

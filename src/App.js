@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
 import Unrelated from './components/Unrelated';
 import Thanks from './components/Thanks';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/unrelated" element={<Unrelated/>}/>
         <Route path="/thanks" element={<Thanks/>}/>
+        <Route path="/gallery" element={<Gallery/>}/>
       </Routes>
 
       <Footer/>

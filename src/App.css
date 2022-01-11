@@ -50,8 +50,6 @@
 }
 
 .footer {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -128,4 +126,8 @@ input {
 .div-thanks{
   margin: 100px;
   align-items: center;
+}
+
+.margin {
+  margin: 10px 40px 10px 40px;
 }

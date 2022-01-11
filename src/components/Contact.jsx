@@ -41,7 +41,7 @@ function Contact() {
 
     return (
         <div className="div-body">
-            <h1>Send me a message</h1>
+            <h1>Get in touch</h1>
                 <div className="contact">
                     <form onSubmit={(element) => submit(element)}>
                         <TextField onChange={(element) => handle(element)} name="name" value={data.name} type="text" required fullWidth id="outlined-textarea" label="Name" placeholder="Hi, stranger" variant="outlined" /> <br />
@@ -53,7 +53,7 @@ function Contact() {
                         <TextField onChange={(element) => handle(element)} name="message" value={data.message} type="text" required fullWidth id="outlined-textarea" label="Message" placeholder="What's on your mind?" multiline rows={6}/> <br />
                         <label htmlFor="BLANK SPACE"> </label> <br />
                         
-                        <Button type="submit">Send</Button>
+                        <Button size="large" sx={{textTransform: 'lowercase'}} type="submit">Send</Button>
                         <label htmlFor="BLANK SPACE"> </label> <br />
                         <label htmlFor="BLANK SPACE"> </label> <br />
                     </form>

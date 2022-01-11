@@ -17,26 +17,30 @@ const images = [
     label: 'cafeaulait.ch',
     imgPath:
         'cafeaulait.png',
-        open: <a href="https:cafeaulait.ch" target="_blank" rel="noreferrer">Open in a new tab</a>,
-        source: <a href="https://github.com/vntero" target="_blank" rel="noreferrer">View source code</a>,
+        open: <Button sx={{textTransform: 'lowercase' }}><a href="https:cafeaulait.ch" target="_blank" rel="noreferrer">Open in a new tab</a></Button>,
+        source: <Button sx={{textTransform: 'lowercase' }}><a href="https://github.com/vntero" target="_blank" rel="noreferrer">View source code</a></Button>,
+        description: <p>"Cafe Au Lait" is a non-profit dance school based in Zurich. I was approached by the organisation to redesign and manage their website.</p>
     },
   {
     label: 'Buszinga!',
     imgPath: 'buszinga.png',
-    open: <a href="https://vntero.github.io/buszinga/" target="_blank" rel="noreferrer">Open in a new tab</a>,
-    source: <a href="https://github.com/vntero/buszinga" target="_blank" rel="noreferrer">View source code</a>,
+    open: <Button sx={{textTransform: 'lowercase' }}><a href="https://vntero.github.io/buszinga/" target="_blank" rel="noreferrer">Open in a new tab</a></Button>,
+    source: <Button sx={{textTransform: 'lowercase' }}><a href="https://github.com/vntero/buszinga" target="_blank" rel="noreferrer">View source code</a></Button>,
+    description: <p>A racing game built on HTML Canvas with vanilla JavaScript with a special focus on collision detection. </p>
   },
   {
     label: 'WoD[i]-WoDpicker',
     imgPath: 'wodi.png',
-    open: <a href="https://wodi-wodpicker.herokuapp.com/" target="_blank" rel="noreferrer">Open in a new tab</a>,
-    source: <a href="https://github.com/marvinvalke/wodi-wod-picker" target="_blank" rel="noreferrer">View source code</a>,
+    open: <Button sx={{textTransform: 'lowercase' }}><a href="https://wodi-wodpicker.herokuapp.com/" target="_blank" rel="noreferrer">Open in a new tab</a></Button>,
+    source: <Button sx={{textTransform: 'lowercase' }}><a href="https://github.com/marvinvalke/wodi-wod-picker" target="_blank" rel="noreferrer">View source code</a></Button>,
+    description: <p>A word play between Woody Woodpecker (the cartoon) and Workout of the day. In this platform (built with a friend) you can create personalised workouts with more than 1,300 exercises to choose from.</p>
   },
   {
     label: 'Clique',
     imgPath: 'clique.png',
-    open: <a href="https://google.com" target="_blank" rel="noreferrer">Open in a new tab</a>,
-    source: <a href="https://github.com/vntero/clique-client" target="_blank" rel="noreferrer">View source code</a>,
+    open: <Button sx={{textTransform: 'lowercase' }}><a href="https://google.com" target="_blank" rel="noreferrer">Open in a new tab</a></Button>,
+    source: <Button sx={{textTransform: 'lowercase' }}><a href="https://github.com/vntero/clique-client" target="_blank" rel="noreferrer">View source code</a></Button>,
+    description: <p>"Clique" is a web app focused on the social aspect of competitive activities. Register yourself to find, join and /or create sport Groups and Events based on your location.</p>
   }
 ];
 
@@ -112,8 +116,10 @@ function Projects() {
                             ) : null}
                         </div>
                         ))}
+
+                        
                     </SwipeableViews>
-                    
+                    {images[activeStep].description}
                     <Paper
                         square
                         elevation={0}
@@ -121,7 +127,6 @@ function Projects() {
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'space-around',
-                        height: 50,
                         pl: 2,
                         bgcolor: 'background.default',
                         }}
@@ -136,6 +141,7 @@ function Projects() {
                         elevation={0}
                         nextButton={
                         <Button
+                            sx={{textTransform: 'lowercase' }}
                             size="small"
                             onClick={handleNext}
                             disabled={activeStep === maxSteps - 1}
@@ -150,6 +156,7 @@ function Projects() {
                         }
                         backButton={
                         <Button 
+                            sx={{textTransform: 'lowercase' }}
                             size="small" 
                             onClick={handleBack} 
                             disabled={activeStep === 0}>
