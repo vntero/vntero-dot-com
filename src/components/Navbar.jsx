@@ -67,9 +67,12 @@ const Navbar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  {page}
+                <MenuItem 
+                  sx={{"&.MuiButtonBase-root:hover": {bgcolor: "transparent"}}} 
+                  key={page} onClick={handleCloseNavMenu}>
+                    {page}
                 </MenuItem>
+
               ))}
             </Menu>
           </Box>
