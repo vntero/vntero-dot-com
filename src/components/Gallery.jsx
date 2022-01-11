@@ -25,10 +25,6 @@ export default function Gallery() {
 
 const itemData = [
   {
-    img: '/photos/why.jpg',
-    title: 'why',
-  },
-  {
     img: '/photos/vulva.jpg',
     title: 'vulva',
   },
@@ -51,10 +47,6 @@ const itemData = [
   {
     img: '/photos/law.jpg',
     title: 'law',
-  },
-  {
-    img: '/photos/aescher.jpg',
-    title: 'aescher',
   },
   {
     img: '/photos/electrico.jpg',
@@ -85,23 +77,7 @@ const itemData = [
     title: 'hippie',
   },
   {
-    img: '/photos/pombos.jpg',
-    title: 'pombos',
-  },
-  {
     img: '/photos/ponte.jpg',
     title: 'ponte',
-  },
-  {
-    img: '/photos/principe.jpg',
-    title: 'principe',
-  },
-  {
-    img: '/photos/shelter.jpg',
-    title: 'shelter',
-  },
-  {
-    img: '/photos/vandalismo.jpg',
-    title: 'vandalismo',
   }
 ];
