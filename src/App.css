@@ -74,9 +74,10 @@ input {
 
 .div-unrelated {
   display: flex;
-  padding: 50px;
+  padding: 20px;
   max-width: 50%;
   align-items: center;
+  justify-content: center;
 }
 
 .blue {

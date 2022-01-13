@@ -12,6 +12,8 @@ import Projects from "./components/Projects"
 import Unrelated from './components/Unrelated';
 import Thanks from './components/Thanks';
 import Gallery from './components/Gallery';
+import Philosophy from './components/Philosophy';
+import Blockchain from './components/Blockchain';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route path="/unrelated" element={<Unrelated/>}/>
         <Route path="/thanks" element={<Thanks/>}/>
         <Route path="/gallery" element={<Gallery/>}/>
+        <Route path="/philosophy" element={<Philosophy/>}/>
+        <Route path="/blockchain" element={<Blockchain/>}/>
       </Routes>
 
       <Footer/>

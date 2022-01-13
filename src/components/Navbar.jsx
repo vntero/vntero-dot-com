@@ -32,7 +32,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar elevation={1} position="static" style={{ background: 'white', color: 'black'}}>
+    <AppBar elevation={1} position="sticky" style={{ background: 'white', color: 'black'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters >
           <Typography

@@ -5,7 +5,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 export default function Gallery() {
   return (
-    <Box sx={{ width: "100%", height: 450, overflowY: 'scroll' }}>
+    <Box sx={{ width: "100%", overflowY: 'scroll' }}>
       <p>Galaxy S10 / iPhone 11</p>
       <ImageList variant="masonry" cols={3} gap={8}>
         {itemData.map((item) => (

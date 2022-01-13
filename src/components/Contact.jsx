@@ -23,7 +23,7 @@ function Contact() {
 
         element.preventDefault();
 
-        Axios.post("http://localhost:5005/new-message", {
+        Axios.post("https://vntero-dot-com.herokuapp.com/new-message", {
             name: data.name, 
             email: data.email, 
             message: data.message
@@ -41,7 +41,7 @@ function Contact() {
 
     return (
         <div className="div-body">
-            <h1>Get in touch</h1>
+            <h1>Send me a message</h1>
                 <div className="contact">
                     <form onSubmit={(element) => submit(element)}>
                         <TextField onChange={(element) => handle(element)} name="name" value={data.name} type="text" required fullWidth id="outlined-textarea" label="Name" placeholder="Hi, stranger" variant="outlined" /> <br />
