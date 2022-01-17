@@ -17,7 +17,7 @@ const images = [
     label: 'cafeaulait.ch',
     imgPath:
         'cafeaulait.png',
-        open: <Button sx={{textTransform: 'lowercase' }}><a href="https:cafeaulait.ch" target="_blank" rel="noreferrer">Open in a new tab</a></Button>,
+        open: <Button sx={{textTransform: 'lowercase' }}><a href="https://cafeaulait.ch" target="_blank" rel="noreferrer">Open in a new tab</a></Button>,
         source: <Button sx={{textTransform: 'lowercase' }}><a href="https://github.com/vntero" target="_blank" rel="noreferrer">View source code</a></Button>,
         description: <p>"Cafe Au Lait" is a non-profit dance school based in Zurich. I was approached by the organisation to redesign and manage their website.</p>
     },
@@ -38,7 +38,7 @@ const images = [
   {
     label: 'Clique',
     imgPath: 'clique.png',
-    open: <Button sx={{textTransform: 'lowercase' }}><a href="https://google.com" target="_blank" rel="noreferrer">Open in a new tab</a></Button>,
+    open: <Button sx={{textTransform: 'lowercase' }}><a href="https://clique-dot-com.herokuapp.com" target="_blank" rel="noreferrer">Open in a new tab</a></Button>,
     source: <Button sx={{textTransform: 'lowercase' }}><a href="https://github.com/vntero/clique-client" target="_blank" rel="noreferrer">View source code</a></Button>,
     description: <p>"Clique" is a web app focused on the social aspect of competitive activities. Register yourself to find, join and /or create sport Groups and Events based on your location.</p>
   }
