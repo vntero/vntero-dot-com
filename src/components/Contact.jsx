@@ -23,7 +23,7 @@ function Contact() {
 
         element.preventDefault();
 
-        Axios.post("https://vntero-dot-com.herokuapp.com/new-message", {
+        Axios.post("https://vntero.com/new-message", {
             name: data.name, 
             email: data.email, 
             message: data.message
