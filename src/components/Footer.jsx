@@ -16,7 +16,7 @@ function Footer() {
         <BottomNavigation className='footer'>
             <a className='margin' href="https://github.com/vntero" target="_blank" rel="noreferrer"><img alt="github" src="github.png" height={25} width={25}/></a>
             <a className='margin' href="https://www.linkedin.com/in/vntero/" target="_blank" rel="noreferrer"><img alt="linkedin" src="linkedin.png" height={25} width={25}/></a>
-            <a className='margin' href="mailto:shin.antero@gmail.com"><img alt="email" src="email.png" height={25} width={25}/></a>
+            <a className='margin' href="mailto:hi@vntero.com"><img alt="email" src="email.png" height={25} width={25}/></a>
         </BottomNavigation>
       </Paper>
     </Box>
