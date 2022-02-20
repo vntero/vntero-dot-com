@@ -12,7 +12,7 @@ function About() {
                 </div>
 
                 <section>
-                <h1>I am full-stack Web Developer looking to build and collaborate on <br />
+                <h1>I am full stack Web Developer looking to build and collaborate on <br />
                 <span className="blue"> beautiful</span>, <span className="red">engaging</span> and <span className="green">functional</span> projects for the World Wide Web.</h1>
                 </section>
             </div>
@@ -27,7 +27,7 @@ function About() {
                 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img alt="React" src="react.png" height={50} width={50}/></a>
                 <a href="https://nodejs.org/" target="_blank" rel="noreferrer"><img alt="Node" src="node.png" height={50} width={50}/></a>
                 <a href="https://expressjs.com/" target="_blank" rel="noreferrer"><img alt="Express" src="express.png" height={50} width={80}/></a>
-                <a href="https://handlebarsjs.com/" target="_blank" rel="noreferrer"><img alt="Handlebars" src="handlebars.png" height={20} width={65}/></a>
+                <a href="https://nextjs.org/" target="_blank" rel="noreferrer"><img alt="Next" src="nextjs.png" height={45} width={75}/></a>
                 
             </div>
             <div className="div-skills">
@@ -35,7 +35,7 @@ function About() {
                 <a href="https://html.spec.whatwg.org/" target="_blank" rel="noreferrer"><img alt="HTML" src="html.png" height={50} width={50}/></a>
                 <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img alt="CSS" src="css.png" height={50} width={50}/></a>
                 <a href="https://mui.com/" target="_blank" rel="noreferrer"><img alt="Material-UI" src="mui.png" height={50} width={50}/></a>
-                <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img alt="Bootstrap" src="bootstrap.png" height={50} width={50}/></a>
+                <a href="https://nextui.org" target="_blank" rel="noreferrer"><img alt="NextUI" src="nextui.png" height={50} width={50}/></a>
             </div>
         </div>
     )
