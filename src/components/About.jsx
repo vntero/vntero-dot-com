@@ -32,8 +32,8 @@ function About() {
             </div>
 
             <div className="div-skills">
-                <a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img alt="JavaScript" src="docker.png" height={45} width={60}/></a>
-                <a href="https://laravel.com/" target="_blank" rel="noreferrer"><img alt="Laravel" src="laravel.png" height={50} width={50}/></a>
+                <a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img alt="Docker" src="docker.png" height={45} width={60}/></a>
+                <a href="https://kubernetes.io/" target="_blank" rel="noreferrer"><img alt="Kubernetes" src="kubernetes.png" height={50} width={50}/></a>
                 <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img alt="MongoDB" src="mongodb.png" height={50} width={80}/></a>
                 <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"><img alt="PostgreSQL" src="pgsql.png" height={50} width={50}/></a>
                 <a href="https://go.dev" target="_blank" rel="noreferrer"><img alt="Go" src="go.png" height={35} width={85}/></a>
