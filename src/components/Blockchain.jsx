@@ -18,7 +18,7 @@ function Blockchain() {
 
              <Box sx={{ width: '100%', maxWidth: 460, bgcolor: 'background.paper' }}>
                     <nav aria-label="main mailbox folders">
-                        <List><ListItem><h1>Food for your brain:</h1></ListItem></List>
+                        <List><ListItem><h3>Food for your brain:</h3></ListItem></List>
                     </nav>
                     
                     <nav aria-label="secondary mailbox folders">
