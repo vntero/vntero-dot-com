@@ -12,7 +12,7 @@ function About() {
                 </div>
 
                 <section>
-                <h1>I am full stack Web Developer looking to build and collaborate on <br />
+                <h1>I am a Backend Developer looking to build and collaborate on <br />
                 <span className="blue"> beautiful</span>, <span className="red">engaging</span> and <span className="green">functional</span> projects for the World Wide Web.</h1>
                 </section>
             </div>
