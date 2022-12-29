@@ -23,7 +23,7 @@ function Contact() {
 
         element.preventDefault();
 
-        Axios.post("https://vntero.com/new-message", {
+        Axios.post("http://3.73.78.59:8080/new-message", {
             name: data.name, 
             email: data.email, 
             message: data.message
