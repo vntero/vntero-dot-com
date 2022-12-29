@@ -23,6 +23,7 @@ function About() {
             <h2>Cards up my sleeve:</h2>
 
             <div className="div-skills">
+                <a href="https://www.javascript.com/" target="_blank" rel="noreferrer"><img alt="JavaScript" src="javascript.png" height={45} width={45}/></a>
                 <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img alt="TypeScript" src="typescript.png" height={45} width={45}/></a>
                 <a href="https://nodejs.org/" target="_blank" rel="noreferrer"><img alt="Node" src="node.png" height={50} width={80}/></a>
                 <a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img alt="Docker" src="docker.png" height={45} width={60}/></a>
@@ -32,7 +33,6 @@ function About() {
             </div>
 
             <div className="div-skills">
-                <a href="https://graphql.org/" target="_blank" rel="noreferrer"><img alt="GraphQL" src="graphql.png" height={50} width={50}/></a>
                 <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img alt="MongoDB" src="mongo.png" height={70} width={60}/></a>
                 <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"><img alt="PostgreSQL" src="pgsql.png" height={50} width={50}/></a>
                 <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img alt="AWS" src="aws.png" height={40} width={65}/></a>
