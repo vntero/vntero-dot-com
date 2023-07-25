@@ -6,7 +6,7 @@ function About() {
     return (
         <div className="div-body">
             <div>
-                <h2>Hi. My name is Hugo.</h2>
+                <h2>Hi! My name is Hugo.</h2>
                 <div className="div-avatar">
                 <Avatar alt="Hugo Antero" src="hugo.png" sx={{ width: 200, height: 200 }} />
                 </div>
