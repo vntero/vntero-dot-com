@@ -46,8 +46,18 @@
 }
 
 .div-body {
-  padding: 100px;
+  padding: 100px; /* Default padding */
+
+  /* Apply different padding for different viewport sizes */
+  @media (max-width: 768px) {
+    padding: 50px; /* Adjust padding for smaller screens */
+  }
+
+  @media (max-width: 480px) {
+    padding: 25px; /* Adjust padding for even smaller screens */
+  }
 }
+
 
 .footer {
   align-items: center;
