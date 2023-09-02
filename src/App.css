@@ -38,6 +38,19 @@
   }
 }
 
+.contact {
+  padding-right: 25%;
+  padding-left: 25%;
+   /* Apply different padding for different viewport sizes */
+   @media (max-width: 1000px) {
+    padding: 50px; /* Adjust padding for smaller screens */
+  }
+
+  @media (max-width: 480px) {
+    padding: 15px; /* Adjust padding for even smaller screens */
+  }
+}
+
 .navbar {
   display: flex;
   align-items: center;
