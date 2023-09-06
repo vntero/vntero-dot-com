@@ -33,8 +33,6 @@ function Contact() {
             console.log(res.data)
         })
 
-        // alert(`Thank you, ${data.name}. I'll get back at you as soon as possible.`)
-
         navigate('/thanks')
  
     }
