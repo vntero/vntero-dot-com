@@ -7,12 +7,12 @@ function About() {
         <div className="div-body">
             <div>
                 <div className="div-avatar">
-                <Avatar alt="Hugo Antero" src="hugo_01.png" sx={{ width: 100, height: 100 }} />
+                <Avatar alt="Hugo Antero" src="headshot.png" sx={{ width: 100, height: 100 }} />
                 </div>
                 <h2>Hugo Antero</h2>
                 <section>
-                <h1>I am a Backend Developer looking to build and collaborate on <br />
-                <span className="blue"> beautiful</span>, <span className="red">engaging</span> and <span className="green">functional</span> projects for the World Wide Web.</h1>
+                <h1>backend developer looking to build and collaborate on <br />
+                <span className="blue"> beautiful</span>, <span className="red">engaging</span>, and <span className="green">functional</span> projects for the world wide web.</h1>
                 </section>
             </div>
 
