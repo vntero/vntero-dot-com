@@ -6,11 +6,10 @@ function About() {
     return (
         <div className="div-body">
             <div>
-                <h2>Hi! My name is Hugo.</h2>
                 <div className="div-avatar">
-                <Avatar alt="Hugo Antero" src="hugo_01.png" sx={{ width: 200, height: 200 }} />
+                <Avatar alt="Hugo Antero" src="hugo_01.png" sx={{ width: 100, height: 100 }} />
                 </div>
-
+                <h2>Hugo Antero</h2>
                 <section>
                 <h1>I am a Backend Developer looking to build and collaborate on <br />
                 <span className="blue"> beautiful</span>, <span className="red">engaging</span> and <span className="green">functional</span> projects for the World Wide Web.</h1>
