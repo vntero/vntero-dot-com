@@ -14,10 +14,8 @@ import MenuItem from '@mui/material/MenuItem';
 import Button from '@mui/material/Button';
 
 const pages = [
-<Link style={{textDecoration: 'none', color: 'black'}} to="/"><Button sx={{ my: 1, display: 'block', textTransform: 'lowercase' }}>About</Button></Link>, 
-<Link style={{textDecoration: 'none', color: 'black'}} to="/projects"><Button sx={{ my: 1, display: 'block', textTransform: 'lowercase' }}>Projects</Button></Link>, 
-<Link style={{textDecoration: 'none', color: 'black'}} to="/contact"><Button sx={{ my: 1, display: 'block', textTransform: 'lowercase' }}>Contact</Button></Link>,
-<Link style={{textDecoration: 'none', color: 'black'}} to="/unrelated"><Button sx={{ my: 1, display: 'block', textTransform: 'lowercase' }}>Unrelated</Button></Link>
+<Link style={{textDecoration: 'none', color: 'black'}} to="/"><Button sx={{ my: 1, display: 'block', textTransform: 'lowercase' }}>about</Button></Link>, 
+<Link style={{textDecoration: 'none', color: 'black'}} to="/projects"><Button sx={{ my: 1, display: 'block', textTransform: 'lowercase' }}>projects</Button></Link>
 ];
 
 const Navbar = () => {
