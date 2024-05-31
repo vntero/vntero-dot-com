@@ -24,12 +24,6 @@ function App() {
         <Route path="/" element={<About/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/projects" element={<Projects/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/unrelated" element={<Unrelated/>}/>
-        <Route path="/thanks" element={<Thanks/>}/>
-        <Route path="/gallery" element={<Gallery/>}/>
-        <Route path="/philosophy" element={<Philosophy/>}/>
-        <Route path="/blockchain" element={<Blockchain/>}/>
       </Routes>
 
       <Footer/>
