@@ -136,6 +136,7 @@ function About() {
                 <div className="div-skills">
                     <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img alt="TypeScript" src="typescript.png" height={45} width={45}/></a>
                     <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img alt="React" src="react.png" height={45} width={50}/></a>
+                    <a href="https://htmx.org/" target="_blank" rel="noreferrer"><img alt="htmx" src="htmx.png" height={45} width={150}/></a>
                 </div>
               </Grid>
               <Grid xs>
@@ -152,8 +153,9 @@ function About() {
               <Grid xs>
                 infra
                 <div className="div-skills">
-                    <a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img alt="Docker" src="docker.png" height={45} width={60}/></a>
                     <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img alt="AWS" src="aws.png" height={40} width={60}/></a>
+                    <a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img alt="Docker" src="docker.png" height={45} width={60}/></a>
+                    <a href="https://kubernetes.io/" target="_blank" rel="noreferrer"><img alt="Kubernetes" src="kubernetes.png" height={50} width={50}/></a>
                     <a href="https://sentry.io/welcome/" target="_blank" rel="noreferrer"><img alt="Sentry" src="sentry.png" height={53} width={60}/></a>
                     <a href="https://prometheus.io/" target="_blank" rel="noreferrer"><img alt="Prometheus" src="prometheus.png" height={50} width={50}/></a>
                 </div>
