@@ -1,27 +1,50 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import BottomNavigation from '@mui/material/BottomNavigation';
-import Paper from '@mui/material/Paper';
+import * as React from 'react'
+import Box from '@mui/material/Box'
+import CssBaseline from '@mui/material/CssBaseline'
+import Paper from '@mui/material/Paper'
+import { styled } from '@mui/system'
+import BottomNavigation from '@mui/material/BottomNavigation'
+import BottomNavigationAction from '@mui/material/BottomNavigationAction'
 
+const OvalPaper = styled(Paper)(({ theme }) => ({
+  position: 'fixed',
+  bottom: theme.spacing(2),
+  left: '50%',
+  transform: 'translateX(-50%)',
+  width: 200,
+  height: 60,
+  borderRadius: 30,
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  padding: theme.spacing(1),
+}))
 
+const List = styled('ul')(({ theme }) => ({
+  listStyle: 'none',
+  display: 'flex',
+  margin: 0,
+  padding: 0,
+  '& li': {
+    margin: `0 ${theme.spacing(1)}px`,
+  },
+}))
 
 function Footer() {
-
-
+  const [value, setValue] = React.useState(0)
   return (
-    <Box sx={{ pb: 7 }}>
+    <Box>
       <CssBaseline />
-      <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
-        <BottomNavigation className='footer'>
-            <a className='margin' href="https://github.com/vntero" target="_blank" rel="noreferrer"><img alt="github" src="github.png" height={25} width={25}/></a>
-            <a className='margin' href="https://www.linkedin.com/in/vntero/" target="_blank" rel="noreferrer"><img alt="linkedin" src="linkedin.png" height={25} width={25}/></a>
-            <a className='margin' href="mailto:hi@vntero.com"><img alt="email" src="email.png" height={25} width={25}/></a>
-        </BottomNavigation>
-      </Paper>
+      <OvalPaper elevation={3}>
+        <List>
+        <BottomNavigation showLabels value={value} onChange={(event, newValue) => { setValue(newValue)}}>
+        <BottomNavigationAction label="Home" />
+        <BottomNavigationAction label="Projects"/>
+       </BottomNavigation>
+        </List>
+      </OvalPaper>
     </Box>
-  );
+  )
 }
-
 
 export default Footer
