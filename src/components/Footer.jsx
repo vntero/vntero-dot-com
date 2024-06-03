@@ -5,15 +5,15 @@ import Paper from '@mui/material/Paper'
 import { styled } from '@mui/system'
 import BottomNavigation from '@mui/material/BottomNavigation'
 import BottomNavigationAction from '@mui/material/BottomNavigationAction'
+import { Link } from "react-router-dom"
 
 const OvalPaper = styled(Paper)(({ theme }) => ({
   position: 'fixed',
   bottom: theme.spacing(2),
   left: '50%',
   transform: 'translateX(-50%)',
-  width: 200,
+  width: 165,
   height: 60,
-  borderRadius: 30,
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
@@ -38,8 +38,8 @@ function Footer() {
       <OvalPaper elevation={3}>
         <List>
         <BottomNavigation showLabels value={value} onChange={(event, newValue) => { setValue(newValue)}}>
-        <BottomNavigationAction label="Home" />
-        <BottomNavigationAction label="Projects"/>
+        <BottomNavigationAction label="Hugo" component={Link} to="/"/>
+        <BottomNavigationAction label="Projects" component={Link} to="/projects"/>
        </BottomNavigation>
         </List>
       </OvalPaper>
