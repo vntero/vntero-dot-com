@@ -1,20 +1,42 @@
-import React from "react"
-import Avatar from '@mui/material/Avatar';
+import Avatar from '@mui/material/Avatar'
+import * as React from 'react'
+import { styled } from '@mui/material/styles'
+import Box from '@mui/material/Box'
+import Paper from '@mui/material/Paper'
+import Grid from '@mui/material/Grid'
 
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}))
 
 function About() {
     return (
-        <div className="div-body">
-            <div>
-                <div className="div-avatar">
-                <Avatar alt="Hugo Antero" src="headshot.png" sx={{ width: 100, height: 100 }} />
+      <Box sx={{ flexGrow: 1 }}>
+        <div className="div-body-padding">
+            <Grid container spacing={2}>
+                <Grid item xs={6} md={6}>
+                    <h1>backend developer looking to build and collaborate on <br />
+                    <span className="blue"> beautiful</span>, <span className="red">engaging</span>, and <span className="green">functional</span> projects for the world wide web.</h1>
+                </Grid>
+                <Grid item xs={6} md={6}>
+                <div>
+                  <div className="div-avatar">
+                    <Avatar alt="Hugo Antero" src="headshot.png" sx={{ width: 100, height: 100 }} />
+                  </div>
+                  <div>
+                    <h2>Hugo Antero</h2>
+                    <a className='margin' href="https://github.com/vntero" target="_blank" rel="noreferrer"><img alt="github" src="github.png" height={25} width={25}/></a>
+                    <a className='margin' href="https://www.linkedin.com/in/vntero/" target="_blank" rel="noreferrer"><img alt="linkedin" src="linkedin.png" height={25} width={25}/></a>
+                    <a className='margin' href="mailto:hi@vntero.com"><img alt="email" src="email.png" height={25} width={25}/></a>
+                  </div>
                 </div>
-                <h2>Hugo Antero</h2>
-                <section>
-                <h1>backend developer looking to build and collaborate on <br />
-                <span className="blue"> beautiful</span>, <span className="red">engaging</span>, and <span className="green">functional</span> projects for the world wide web.</h1>
-                </section>
-            </div>
+                </Grid>
+            </Grid>
+            
 
             <label htmlFor="BLANK SPACE"></label><br />
             <label htmlFor="BLANK SPACE"></label><br />
@@ -37,6 +59,7 @@ function About() {
                 <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img alt="AWS" src="aws.png" height={40} width={60}/></a>
             </div>
         </div>
+      </Box>
     )
 }
 

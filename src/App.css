@@ -58,8 +58,8 @@
   padding: 10px;
 }
 
-.div-body {
-  padding: 30px;
+.div-body-padding {
+  padding: 250px 30px 30px 30px;
 }
 
 .footer {
