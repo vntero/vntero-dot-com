@@ -6,7 +6,6 @@ import { Routes, Route } from "react-router-dom"
 // components
 import About from "./components/About"
 import Footer from "./components/Footer"
-import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
 
 function App() {

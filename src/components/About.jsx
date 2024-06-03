@@ -151,7 +151,7 @@ function About() {
                 </div>
               </Grid>
               <Grid xs>
-                infra
+                infrastructure
                 <div className="div-skills">
                     <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img alt="AWS" src="aws.png" height={40} width={60}/></a>
                     <a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img alt="Docker" src="docker.png" height={45} width={60}/></a>
