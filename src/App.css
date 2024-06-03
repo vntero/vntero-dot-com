@@ -58,7 +58,7 @@
   padding: 10px;
 }
 
-.div-intro-padding {
+.div-intro {
   padding: 250px 30px 250px 30px;
 }
 
@@ -148,4 +148,14 @@ input {
 
 .margin {
   margin: 10px 40px 10px 40px;
+}
+
+.div-favourite-projects {
+  margin: 10px 40px 10px 40px;
+  padding-bottom: 100px;
+}
+
+.div-hard-skills {
+  margin: 10px 40px 10px 40px;
+  padding-bottom: 100px;
 }

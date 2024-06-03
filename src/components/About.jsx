@@ -3,8 +3,12 @@ import * as React from 'react'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
+import Paper from '@mui/material/Paper'
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import { Button, CardActionArea, CardActions } from '@mui/material';
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -20,7 +24,7 @@ const message = `Truncation should be conditionally applicable on this long line
 function About() {
     return (
       <Box sx={{ flexGrow: 1 }}>
-        <div className="div-intro-padding">
+        <div className="div-intro">
             <Grid container wrap="nowrap" spacing={2}>
                 <Grid xs={6} md={6}>
                     <h1>backend developer looking to build and collaborate on <br />
@@ -45,28 +49,79 @@ function About() {
         <div className="div-favourite-projects">
           <h1>favourite projects</h1>
           <Box sx={{ flexGrow: 1, overflow: 'hidden', px: 3 }}>
-          <Grid container wrap="nowrap" spacing={2} justifyContent="center">
-            <StyledPaper sx={{ my: 1, mx: 'auto', p: 2 }}>
-              <Grid container wrap="nowrap" spacing={2}>
-                <Grid item xs>
-                  <Typography>Project 1 name, description, tech stack</Typography>
-                </Grid>
-              </Grid>
-            </StyledPaper>
-            <StyledPaper sx={{ my: 1, mx: 'auto', p: 2 }}>
-              <Grid container wrap="nowrap" spacing={2}>
-                <Grid item xs>
-                  <Typography>Project 1 name, description, tech stack</Typography>
-                </Grid>
-              </Grid>
-            </StyledPaper>
-            <StyledPaper sx={{ my: 1, mx: 'auto', p: 2 }}>
-              <Grid container wrap="nowrap" spacing={2}>
-                <Grid item xs>
-                  <Typography>Project 1 name, description, tech stack</Typography>
-                </Grid>
-              </Grid>
-            </StyledPaper>
+            <Grid container wrap="nowrap" spacing={2} justifyContent="center">
+              <Card sx={{ my: 1, mx: 'auto', p: 2 }}>
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image="/static/images/cards/contemplative-reptile.jpg"
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        Lizard
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        Lizards are a widespread group of squamate reptiles, with over 6,000
+                        species, ranging across all continents except Antarctica
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Share
+                    </Button>
+                  </CardActions>
+              </Card>
+              <Card sx={{ my: 1, mx: 'auto', p: 2 }}>
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image="/static/images/cards/contemplative-reptile.jpg"
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        Lizard
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        Lizards are a widespread group of squamate reptiles, with over 6,000
+                        species, ranging across all continents except Antarctica
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Share
+                    </Button>
+                  </CardActions>
+              </Card>
+              <Card sx={{ my: 1, mx: 'auto', p: 2 }}>
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image="/static/images/cards/contemplative-reptile.jpg"
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        Lizard
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        Lizards are a widespread group of squamate reptiles, with over 6,000
+                        species, ranging across all continents except Antarctica
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Share
+                    </Button>
+                  </CardActions>
+              </Card>
             </Grid>
           </Box>
         </div>
