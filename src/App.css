@@ -57,10 +57,6 @@
   padding: 10px;
 }
 
-.div-intro {
-  padding: 250px 30px 250px 30px;
-}
-
 .footer {
   align-items: center;
 }
@@ -147,6 +143,10 @@ input {
 
 .margin {
   margin: 10px 40px 10px 0px;
+}
+
+.div-intro {
+  padding: 250px 30px 250px 30px;
 }
 
 .div-favourite-projects {

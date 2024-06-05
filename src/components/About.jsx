@@ -2,24 +2,24 @@ import Avatar from '@mui/material/Avatar'
 import * as React from 'react'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper'
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
+import Typography from '@mui/material/Typography'
+import { Button, CardActionArea, CardActions } from '@mui/material'
 
-const StyledPaper = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(2),
-  maxWidth: 400,
-  color: theme.palette.text.primary,
-}));
-
-const message = `Truncation should be conditionally applicable on this long line of text
- as this is a much longer line than what the container can support. `;
+const card = (
+  <React.Fragment>
+    <CardContent>
+      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        "We must cultivate our garden"
+      </Typography>
+    </CardContent>
+    <CardActions>
+      <Button size='small'>Quotate</Button>
+    </CardActions>
+  </React.Fragment>
+)
 
 function About() {
     return (
@@ -28,16 +28,18 @@ function About() {
             <Grid container wrap="nowrap" spacing={2}>
                 <Grid xs={6} md={6}>
                     <h1 className='h1-no-margin'>
-                      backend developer looking to build and collaborate on
+                      I'm a backend developer looking to build and collaborate on
                       <span className="blue"> beautiful</span>, 
-                      <span className="red">engaging</span>, and 
-                      <span className="green">functional</span> 
-                      projects for the world wide web.
+                      <span className="red"> engaging</span>, and 
+                      <span className="green"> functional</span> projects for the world wide web.
                     </h1>
                 </Grid>
                 <Grid xs={6} md={6}>
                     <Avatar alt="Hugo Antero" src="headshot.png" sx={{ width: 100, height: 100 }} />
                     <h2>Hugo Antero</h2>
+                    <Box sx={{ minWidth: 175 }}>
+                      <Card variant="outlined">{card}</Card>
+                    </Box><br></br>
                     <a className='margin' href="https://github.com/vntero" target="_blank" rel="noreferrer"><img alt="github" src="github.png" height={25} width={25}/></a>
                     <a className='margin' href="https://www.linkedin.com/in/vntero/" target="_blank" rel="noreferrer"><img alt="linkedin" src="linkedin.png" height={25} width={25}/></a>
                     <a className='margin' href="mailto:hi@vntero.com"><img alt="email" src="email.png" height={25} width={25}/></a>
