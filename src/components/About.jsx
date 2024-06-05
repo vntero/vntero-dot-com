@@ -31,17 +31,11 @@ function About() {
                     <span className="blue"> beautiful</span>, <span className="red">engaging</span>, and <span className="green">functional</span> projects for the world wide web.</h1>
                 </Grid>
                 <Grid xs={6} md={6}>
-                <div>
-                  <div className="div-avatar">
                     <Avatar alt="Hugo Antero" src="headshot.png" sx={{ width: 100, height: 100 }} />
-                  </div>
-                  <div>
                     <h2>Hugo Antero</h2>
                     <a className='margin' href="https://github.com/vntero" target="_blank" rel="noreferrer"><img alt="github" src="github.png" height={25} width={25}/></a>
                     <a className='margin' href="https://www.linkedin.com/in/vntero/" target="_blank" rel="noreferrer"><img alt="linkedin" src="linkedin.png" height={25} width={25}/></a>
                     <a className='margin' href="mailto:hi@vntero.com"><img alt="email" src="email.png" height={25} width={25}/></a>
-                  </div>
-                </div>
                 </Grid>
             </Grid>
         </div>

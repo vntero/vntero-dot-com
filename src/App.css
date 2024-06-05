@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -147,7 +146,7 @@ input {
 }
 
 .margin {
-  margin: 10px 40px 10px 40px;
+  margin: 10px 40px 10px 0px;
 }
 
 .div-favourite-projects {
