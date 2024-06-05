@@ -27,8 +27,13 @@ function About() {
         <div className="div-intro">
             <Grid container wrap="nowrap" spacing={2}>
                 <Grid xs={6} md={6}>
-                    <h1>backend developer looking to build and collaborate on <br />
-                    <span className="blue"> beautiful</span>, <span className="red">engaging</span>, and <span className="green">functional</span> projects for the world wide web.</h1>
+                    <h1 className='h1-no-margin'>
+                      backend developer looking to build and collaborate on
+                      <span className="blue"> beautiful</span>, 
+                      <span className="red">engaging</span>, and 
+                      <span className="green">functional</span> 
+                      projects for the world wide web.
+                    </h1>
                 </Grid>
                 <Grid xs={6} md={6}>
                     <Avatar alt="Hugo Antero" src="headshot.png" sx={{ width: 100, height: 100 }} />
