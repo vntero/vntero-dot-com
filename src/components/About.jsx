@@ -12,7 +12,8 @@ const card = (
   <React.Fragment>
     <CardContent>
       <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-        "We must cultivate our garden"
+        "We must cultivate our garden We must cultivate our garden We must cultivate our garden We must cultivate our garden We must cultivate our garden We must cultivate our garden
+         We must cultivate our garden We must cultivate our garden We must cultivate our garden We must cultivate our garden We must cultivate our garden We must cultivate our garden"
       </Typography>
     </CardContent>
     <CardActions>
@@ -25,26 +26,28 @@ function About() {
     return (
       <Box sx={{ flexGrow: 1 }}>
         <div className="div-intro">
-            <Grid container wrap="nowrap" spacing={2}>
-                <Grid xs={6} md={6}>
-                    <h1 className='h1-no-margin'>
-                      I'm a backend developer looking to build and collaborate on
-                      <span className="blue"> beautiful</span>, 
-                      <span className="red"> engaging</span>, and 
-                      <span className="green"> functional</span> projects for the world wide web.
-                    </h1>
+            <Box sx={{ flexGrow: 1 }}>
+                <Grid container spacing={3}>
+                    <Grid xs>
+                        <h1 className='h1-no-margin'>
+                          I'm a backend developer looking to build and collaborate on
+                          <span className="blue"> beautiful</span>, 
+                          <span className="red"> engaging</span>, and 
+                          <span className="green"> functional</span> projects for the world wide web.
+                        </h1>
+                    </Grid>
+                    <Grid xs>
+                        <Avatar alt="Hugo Antero" src="headshot.png" sx={{ width: 80, height: 80 }} />
+                        <h3>Hugo Antero</h3>
+                        <Box sx={{ minWidth: 175 }}>
+                          <Card variant="outlined">{card}</Card>
+                        </Box><br></br>
+                        <a className='margin' href="https://github.com/vntero" target="_blank" rel="noreferrer"><img alt="github" src="github.png" height={25} width={25}/></a>
+                        <a className='margin' href="https://www.linkedin.com/in/vntero/" target="_blank" rel="noreferrer"><img alt="linkedin" src="linkedin.png" height={25} width={25}/></a>
+                        <a className='margin' href="mailto:hi@vntero.com"><img alt="email" src="email.png" height={25} width={25}/></a>
+                    </Grid>
                 </Grid>
-                <Grid xs={6} md={6}>
-                    <Avatar alt="Hugo Antero" src="headshot.png" sx={{ width: 100, height: 100 }} />
-                    <h2>Hugo Antero</h2>
-                    <Box sx={{ minWidth: 175 }}>
-                      <Card variant="outlined">{card}</Card>
-                    </Box><br></br>
-                    <a className='margin' href="https://github.com/vntero" target="_blank" rel="noreferrer"><img alt="github" src="github.png" height={25} width={25}/></a>
-                    <a className='margin' href="https://www.linkedin.com/in/vntero/" target="_blank" rel="noreferrer"><img alt="linkedin" src="linkedin.png" height={25} width={25}/></a>
-                    <a className='margin' href="mailto:hi@vntero.com"><img alt="email" src="email.png" height={25} width={25}/></a>
-                </Grid>
-            </Grid>
+            </Box>
         </div>
 
         <div className="div-favourite-projects">
@@ -127,9 +130,33 @@ function About() {
           </Box>
         </div>
 
+        <div className="div-intro">
+          <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={3}>
+              <Grid xs>
+                <h1 className='h1-no-margin'>
+                  I'm a backend developer looking to build and collaborate on
+                  <span className="blue"> beautiful</span>, 
+                  <span className="red"> engaging</span>, and 
+                  <span className="green"> functional</span> projects for the world wide web.
+                </h1>
+              </Grid>
+              <Grid xs>
+                <div className="div-skills">
+                    <a href="https://nodejs.org/" target="_blank" rel="noreferrer"><img alt="Node" src="node.png" height={50} width={80}/></a>
+                    <a href="https://go.dev" target="_blank" rel="noreferrer"><img alt="Go" src="go.png" height={35} width={85}/></a>
+                    <a href="https://graphql.org/" target="_blank" rel="noreferrer"><img alt="AWS" src="gql.png" height={50} width={50}/></a>
+                    <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img alt="MongoDB" src="mongo.png" height={70} width={60}/></a>
+                    <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"><img alt="PostgreSQL" src="pgsql.png" height={50} width={50}/></a>
+                    <a href="https://jestjs.io/" target="_blank" rel="noreferrer"><img alt="Jest" src="jest.png" height={50} width={50}/></a>
+                </div>
+              </Grid>
+            </Grid>
+          </Box>          
+        </div>
+
         <div className="div-hard-skills">
           <h1>cards up my sleeve</h1>
-
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={3}>
               <Grid xs>
@@ -162,7 +189,7 @@ function About() {
                 </div>
               </Grid>
             </Grid>
-          </Box>
+          </Box>          
         </div>
       </Box>
     )
