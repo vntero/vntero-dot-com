@@ -21,18 +21,20 @@ const card = (
 
 const DemoPaper = styled(Paper)(({ theme }) => ({
   width: 320,
-  height:320,
+  height: 320,
   padding: theme.spacing(2),
   ...theme.typography.body2,
   textAlign: 'center',
+  elevation: 0,
 }));
 
 function About() {
     return (
       <Container>
+          {/* Introduction */}
           <Stack spacing={4}>
             <Grid container spacing={2} sx={{ minHeight: { xs: 'auto', md: '80vh' }, alignItems: 'center' }}>
-              {/* Introduction */}
+              
               <Grid item xs={12} md={8} lg={6} sx={{ padding: { xs: 4, md: 0 } }}>
                 <Stack spacing={1} sx={{ paddingY: { xs: 4, md: 0 } }}>
                   <Box sx={{ paddingX: 2 }}>
@@ -48,7 +50,6 @@ function About() {
                 </Stack>
               </Grid>
 
-              {/* Name, quotes generator, socials*/}
               <Grid item xs={12} md={8} lg={6} sx={{ padding: { xs: 4, md: 0 } }}>
                 <Stack spacing={1} sx={{ paddingY: { xs: 4, md: 0 } }}>
                   <Box sx={{ paddingX: 2 }}>
@@ -74,16 +75,17 @@ function About() {
           <div className="div-hard-skills">
             <h1>Favourite projects</h1><br></br>
             <Box sx={{ flexGrow: 1 }}>
-              <Grid container spacing={3}>
+              <Grid container spacing={3} sx={{ minHeight: { xs: 'auto' }, alignItems: 'center' }}>
                 <Grid xs>
-                  <DemoPaper square>Node.js pub-sub
+                  <DemoPaper square>
+                    <h3>Node.js pub-sub</h3>
                   </DemoPaper><br></br>
                 </Grid>
                 <Grid xs>
-                  <DemoPaper square>JavaScript 2D racing game</DemoPaper><br></br>
+                  <DemoPaper square><h3>JavaScript 2D racing game</h3></DemoPaper><br></br>
                 </Grid>
                 <Grid xs>
-                  <DemoPaper square>cafeaulait.ch</DemoPaper><br></br>
+                  <DemoPaper square><h3>cafeaulait.ch</h3></DemoPaper><br></br>
                 </Grid>
               </Grid>
             </Box>          
@@ -95,7 +97,7 @@ function About() {
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={3}>
                 <Grid xs>
-                  <DemoPaper square>
+                  <DemoPaper square elevation={0}>
                   <h3>Frontend</h3>
                 <div className="div-skills">
                     <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img alt="TypeScript" src="typescript.png" height={45} width={45}/></a>
@@ -104,7 +106,7 @@ function About() {
                   </DemoPaper><br></br>
                 </Grid>
                 <Grid xs>
-                  <DemoPaper square>
+                  <DemoPaper square elevation={0}>
                   <h3>Backend</h3>
                   <div className="div-skills">
                     <a href="https://nodejs.org/" target="_blank" rel="noreferrer"><img alt="Node" src="node.png" height={50} width={80}/></a>
@@ -113,7 +115,7 @@ function About() {
                   </DemoPaper><br></br>
                 </Grid>
                 <Grid xs>
-                  <DemoPaper square>
+                  <DemoPaper square elevation={0}>
                     <h3>Infrastructure</h3>
                     <div className="div-skills">
                       <a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img alt="Docker" src="docker.png" height={45} width={60}/></a>
