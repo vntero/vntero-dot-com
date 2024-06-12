@@ -82,7 +82,9 @@ function About() {
                   </DemoPaper><br></br>
                 </Grid>
                 <Grid xs>
-                  <DemoPaper square><h3>JavaScript 2D racing game</h3></DemoPaper><br></br>
+                  <DemoPaper square>
+                    <h3>JavaScript 2D racing game</h3>
+                  </DemoPaper><br></br>
                 </Grid>
                 <Grid xs>
                   <DemoPaper square><h3>cafeaulait.ch</h3></DemoPaper><br></br>
