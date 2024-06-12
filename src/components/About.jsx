@@ -2,7 +2,8 @@ import Avatar from '@mui/material/Avatar'
 import * as React from 'react'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
-import { Container, Grid, Box, Typography, Stack, CardActions, Button } from '@mui/material'
+import { styled } from '@mui/material/styles';
+import { Container, Grid, Box, Typography, Stack, CardActions, Button, Paper } from '@mui/material'
 import Balancer from 'react-wrap-balancer'
 
 const card = (
@@ -17,6 +18,14 @@ const card = (
     </CardActions>
   </React.Fragment>
 )
+
+const DemoPaper = styled(Paper)(({ theme }) => ({
+  width: 320,
+  height:320,
+  padding: theme.spacing(2),
+  ...theme.typography.body2,
+  textAlign: 'center',
+}));
 
 function About() {
     return (
@@ -60,6 +69,61 @@ function About() {
               </Grid>
             </Grid>
           </Stack>
+
+          {/* Favourite projects */}
+          <div className="div-hard-skills">
+            <h1>Favourite projects</h1><br></br>
+            <Box sx={{ flexGrow: 1 }}>
+              <Grid container spacing={3}>
+                <Grid xs>
+                  <DemoPaper square>Node.js pub-sub
+                  </DemoPaper><br></br>
+                </Grid>
+                <Grid xs>
+                  <DemoPaper square>JavaScript 2D racing game</DemoPaper><br></br>
+                </Grid>
+                <Grid xs>
+                  <DemoPaper square>cafeaulait.ch</DemoPaper><br></br>
+                </Grid>
+              </Grid>
+            </Box>          
+          </div>
+
+          {/* Skills */}
+          <div className="div-hard-skills">
+            <h1>Skills</h1><br></br>
+            <Box sx={{ flexGrow: 1 }}>
+              <Grid container spacing={3}>
+                <Grid xs>
+                  <DemoPaper square>
+                  <h3>Frontend</h3>
+                <div className="div-skills">
+                    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img alt="TypeScript" src="typescript.png" height={45} width={45}/></a>
+                    <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img alt="React" src="react.png" height={45} width={50}/></a>
+                </div>
+                  </DemoPaper><br></br>
+                </Grid>
+                <Grid xs>
+                  <DemoPaper square>
+                  <h3>Backend</h3>
+                  <div className="div-skills">
+                    <a href="https://nodejs.org/" target="_blank" rel="noreferrer"><img alt="Node" src="node.png" height={50} width={80}/></a>
+                    <a href="https://go.dev" target="_blank" rel="noreferrer"><img alt="Go" src="go.png" height={35} width={85}/></a>
+                </div>
+                  </DemoPaper><br></br>
+                </Grid>
+                <Grid xs>
+                  <DemoPaper square>
+                    <h3>Infrastructure</h3>
+                    <div className="div-skills">
+                      <a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img alt="Docker" src="docker.png" height={45} width={60}/></a>
+                      <a href="https://kubernetes.io/" target="_blank" rel="noreferrer"><img alt="Kubernetes" src="kubernetes.png" height={50} width={50}/></a>
+                    </div>
+                  </DemoPaper><br></br>
+                </Grid>
+              </Grid>
+            </Box>          
+          </div>
       </Container>
     )
 }
