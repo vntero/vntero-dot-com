@@ -64,11 +64,6 @@ function Projects() {
 
         <div className="div-body">
 
-            <h1>
-                Always aiming for a <span className="grey">minimalist</span>  <br />
-                yet <span className="yellow">personalised</span> end-product.
-            </h1>
-
             <div className="div-carousel">
                 <Box sx={{ maxWidth: 800, flexGrow: 1 }}>
                     <Paper
