@@ -3,7 +3,7 @@ import * as React from 'react'
 import Card from '@mui/material/Card'
 import { Container, Grid, Box, Typography, Stack, CardMedia, CardContent, CardActions, Button, Chip } from '@mui/material'
 import Balancer from 'react-wrap-balancer'
-import { card, DemoPaper } from './Extras'
+import { card, DemoPaper } from './Helpers'
 
 function About() {
     return (
@@ -13,7 +13,7 @@ function About() {
             <Grid container spacing={2} sx={{ minHeight: { xs: 'auto', md: '80vh' }, alignItems: 'center' }}>
               
               {/* Description */}
-              <Grid item xs={12} md={8} lg={6} sx={{ padding: { xs: 4, md: 0 } }}>
+              <Grid item xs={12} md={6} lg={6} sx={{ padding: { xs: 4, md: 0 } }}>
                 <Stack spacing={1} sx={{ paddingY: { xs: 4, md: 0 } }}>
                   <Box sx={{ paddingX: 2 }}>
                       <Balancer>
@@ -29,7 +29,7 @@ function About() {
               </Grid>
 
               {/* Avatar, quotes and socials */}
-              <Grid item xs={12} md={8} lg={6} sx={{ padding: { xs: 4, md: 0 } }}>
+              <Grid item xs={12} md={6} lg={6} sx={{ padding: { xs: 4, md: 0 } }}>
                 <Stack spacing={1} sx={{ paddingY: { xs: 4, md: 0 } }}>
                   <Box sx={{ paddingX: 2 }}>
                     <Typography>
