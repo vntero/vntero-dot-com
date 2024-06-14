@@ -54,7 +54,7 @@ function About() {
           </div>
 
           {/* Favourite projects */}
-          <div>
+          <div className='padded-bottom'>
             <h1>Favourite projects</h1><br></br>
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={2} sx={{ minHeight: { xs: 'auto' }, alignItems: 'center' }}>
@@ -149,7 +149,7 @@ function About() {
           </div>
 
           {/* Skills */}
-          <div>
+          <div className='padded-bottom'>
             <h1>Skills</h1><br></br>
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={3}>

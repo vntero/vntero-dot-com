@@ -163,3 +163,7 @@ input {
 .h1-no-margin {
   margin: 0
 }
+
+.padded-bottom {
+  padding-bottom: 100px;
+}
