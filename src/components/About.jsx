@@ -35,6 +35,7 @@ function About() {
           <Stack spacing={4}>
             <Grid container spacing={2} sx={{ minHeight: { xs: 'auto', md: '80vh' }, alignItems: 'center' }}>
               
+              {/* Description */}
               <Grid item xs={12} md={8} lg={6} sx={{ padding: { xs: 4, md: 0 } }}>
                 <Stack spacing={1} sx={{ paddingY: { xs: 4, md: 0 } }}>
                   <Box sx={{ paddingX: 2 }}>
@@ -50,6 +51,7 @@ function About() {
                 </Stack>
               </Grid>
 
+              {/* Avatar, quotes and socials */}
               <Grid item xs={12} md={8} lg={6} sx={{ padding: { xs: 4, md: 0 } }}>
                 <Stack spacing={1} sx={{ paddingY: { xs: 4, md: 0 } }}>
                   <Box sx={{ paddingX: 2 }}>
