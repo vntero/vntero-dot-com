@@ -8,15 +8,10 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft'
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight'
 import SwipeableViews from 'react-swipeable-views'
 
-// import { autoPlay } from 'react-swipeable-views-utils'
-
-// const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
-
 export const images = [
 {
     label: 'cafeaulait.ch',
-    imgPath:
-        'cafeaulait.png',
+    imgPath: 'cafeaulait.png',
     open: <Button sx={{textTransform: 'lowercase' }}><a href="https://cafeaulait.ch" target="_blank" rel="noreferrer">Open in a new tab</a></Button>,
     source: <Button sx={{textTransform: 'lowercase' }}><a href="https://github.com/vntero" target="_blank" rel="noreferrer">View source code</a></Button>,
     description: <p>"Cafe Au Lait" is a non-profit dance school based in Zurich. I was approached by the organisation to redesign and manage their website.</p>

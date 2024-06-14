@@ -1,32 +1,9 @@
 import Avatar from '@mui/material/Avatar'
 import * as React from 'react'
 import Card from '@mui/material/Card'
-import CardContent from '@mui/material/CardContent'
-import { styled } from '@mui/material/styles';
-import { Container, Grid, Box, Typography, Stack, CardActions, Button, Paper } from '@mui/material'
+import { Container, Grid, Box, Typography, Stack, CardMedia, CardContent, CardActions, Button } from '@mui/material'
 import Balancer from 'react-wrap-balancer'
-
-export const card = (
-  <React.Fragment>
-    <CardContent>
-      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-        "We must cultivate our garden"
-      </Typography>
-    </CardContent>
-    <CardActions>
-      <Button size='small'>Quotate</Button>
-    </CardActions>
-  </React.Fragment>
-)
-
-export const DemoPaper = styled(Paper)(({ theme }) => ({
-  width: 320,
-  height: 320,
-  padding: theme.spacing(2),
-  ...theme.typography.body2,
-  textAlign: 'center',
-  elevation: 0,
-}));
+import { card, DemoPaper } from './Extras'
 
 function About() {
     return (
@@ -62,9 +39,9 @@ function About() {
                         <Box sx={{ minWidth: 250 }}>
                           <Card variant="outlined">{card}</Card>
                         </Box><br></br>
-                        <a className='margin' href="https://github.com/vntero" target="_blank" rel="noreferrer"><img alt="github" src="github.png" height={35} width={35}/></a>
-                        <a className='margin' href="https://www.linkedin.com/in/vntero/" target="_blank" rel="noreferrer"><img alt="linkedin" src="linkedin.png" height={35} width={35}/></a>
-                        <a className='margin' href="mailto:hi@vntero.com"><img alt="email" src="email.png" height={35} width={35}/></a>
+                          <a className='margin' href="https://github.com/vntero" target="_blank" rel="noreferrer"><img alt="github" src="github.png" height={35} width={35}/></a>
+                          <a className='margin' href="https://www.linkedin.com/in/vntero/" target="_blank" rel="noreferrer"><img alt="linkedin" src="linkedin.png" height={35} width={35}/></a>
+                          <a className='margin' href="mailto:hi@vntero.com"><img alt="email" src="email.png" height={35} width={35}/></a>
                       </Balancer>
                     </Typography>
                   </Box>
@@ -79,9 +56,76 @@ function About() {
             <h1>Favourite projects</h1><br></br>
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={3} sx={{ minHeight: { xs: 'auto' }, alignItems: 'center' }}>
-                <Grid xs>
+                {/* Project 1 */}
+                <Card sx={{ maxWidth: 345 }}>
+                  <CardMedia
+                    component="img"
+                    alt="green iguana"
+                    height="140"
+                    image="pubsub.png"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Temp. monitoring pub-sub
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with over 6,000
+                      species, ranging across all continents except Antarctica
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small">Share</Button>
+                    <Button size="small">Learn More</Button>
+                  </CardActions>
+                </Card>
+                {/* Project 2 */}
+                <Card sx={{ maxWidth: 345 }}>
+                  <CardMedia
+                    component="img"
+                    alt="green iguana"
+                    height="140"
+                    image="/static/images/cards/contemplative-reptile.jpg"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      JavaScript 2D racing game
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with over 6,000
+                      species, ranging across all continents except Antarctica
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small">Share</Button>
+                    <Button size="small">Learn More</Button>
+                  </CardActions>
+                </Card>
+                {/* Project 3 */}
+                <Card sx={{ maxWidth: 345 }}>
+                  <CardMedia
+                    component="img"
+                    alt="green iguana"
+                    height="140"
+                    image="pubsub.png"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      cafeaulait.ch
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with over 6,000
+                      species, ranging across all continents except Antarctica
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small">Share</Button>
+                    <Button size="small">Learn More</Button>
+                  </CardActions>
+                </Card>
+                {/* <Grid xs>
                   <DemoPaper square>
-                    <h3>Node.js pub-sub</h3>
+                    <img src='typescript.png' alt='test' style={{ width: 280, height: 280 }} />
+                    <h3>Temperature monitoring pub-sub</h3>
                   </DemoPaper><br></br>
                 </Grid>
                 <Grid xs>
@@ -91,7 +135,7 @@ function About() {
                 </Grid>
                 <Grid xs>
                   <DemoPaper square><h3>cafeaulait.ch</h3></DemoPaper><br></br>
-                </Grid>
+                </Grid> */}
               </Grid>
             </Box>          
           </div>
