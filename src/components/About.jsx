@@ -1,11 +1,35 @@
 import Avatar from '@mui/material/Avatar'
-import * as React from 'react'
+import React, { useState } from 'react'
 import Card from '@mui/material/Card'
 import { Container, Grid, Box, Typography, Stack, CardMedia, CardContent, CardActions, Button, Chip } from '@mui/material'
 import Balancer from 'react-wrap-balancer'
-import { card, DemoPaper } from './Helpers'
+import { quotes, DemoPaper } from './Helpers'
 
 function About() {
+  const [quoteIndex, setQuoteIndex] = useState(0)
+
+  const handleQuotateClick = () => {
+      let newIndex
+  
+      do {
+        newIndex = Math.floor(Math.random() * quotes.length)
+      } while (newIndex === quoteIndex)
+      setQuoteIndex(newIndex)
+    }
+  
+    const card = (
+      <React.Fragment>
+        <CardContent>
+          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+            {quotes[quoteIndex]}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size='small' onClick={handleQuotateClick}>Quotate</Button>
+        </CardActions>
+      </React.Fragment>
+    )
+
     return (
       <Container>
           {/* Introduction */}
