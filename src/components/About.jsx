@@ -1,7 +1,7 @@
 import Avatar from '@mui/material/Avatar'
 import * as React from 'react'
 import Card from '@mui/material/Card'
-import { Container, Grid, Box, Typography, Stack, CardMedia, CardContent, CardActions, Button } from '@mui/material'
+import { Container, Grid, Box, Typography, Stack, CardMedia, CardContent, CardActions, Button, Chip } from '@mui/material'
 import Balancer from 'react-wrap-balancer'
 import { card, DemoPaper } from './Extras'
 
@@ -56,7 +56,7 @@ function About() {
             <h1>Favourite projects</h1><br></br>
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={2} sx={{ minHeight: { xs: 'auto' }, alignItems: 'center' }}>
-                {/* Project 1 */}
+                {/* Project 1 - PUB SUB*/}
                 <Grid item xs={12} sm={6} md={4}>
                   <Card sx={{ maxWidth: 345 }}>
                     <CardMedia
@@ -67,19 +67,25 @@ function About() {
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        Temp. monitoring pub-sub
+                        Temp. monitoring app
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
                         Publish-subscribe app leveraging the mosquitto message broker.
-                      </Typography>
+                      </Typography><br />
+                      <Chip label="TypeScript" size="small"/>
+                      <Chip label="Node" size="small"/>
+                      <Chip label="Docker" size="small"/>
+                      <Chip label="Mosquitto" size="small"/>
                     </CardContent>
 
+                    
+
                     <CardActions>
-                      <Button size="small">Github</Button>
+                      <Button size="small"><a href='https://github.com/vntero/temperature-monitoring-pub-sub' target="_blank" rel="noreferrer">Github</a></Button>
                     </CardActions>
                   </Card>
                 </Grid>
-                {/* Project 2 */}
+                {/* Project 2 - BUSZINGA! */}
                 <Grid item xs={12} sm={6} md={4}>
                   <Card sx={{ maxWidth: 345 }}>
                     <CardMedia
@@ -90,19 +96,22 @@ function About() {
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        JavaScript 2D racing game
+                        2D racing game
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
-                      You'll be taking the kids to school. Pick up batteries along the way so you don't run out of it.
-                      </Typography>
+                        Bus driver goes on an Impossible Mission to take the kids to school.
+                      </Typography><br />
+                      <Chip label="HTML" size="small"/>
+                      <Chip label="CSS" size="small"/>
+                      <Chip label="JS DOM" size="small"/>
                     </CardContent>
                     <CardActions>
-                      <Button size="small">Open</Button>
-                      <Button size="small">Github</Button>
+                      <Button size="small"><a href='https://vntero.github.io/buszinga/' target="_blank" rel="noreferrer">Play</a></Button>
+                      <Button size="small"><a href='https://github.com/vntero/buszinga' target="_blank" rel="noreferrer">Github</a></Button>
                     </CardActions>
                   </Card>
                 </Grid>
-                {/* Project 3 */}
+                {/* Project 3 - CAFE AU LAIT */}
                 <Grid item xs={12} sm={6} md={4}>
                   <Card sx={{ maxWidth: 345 }}>
                     <CardMedia
@@ -117,10 +126,13 @@ function About() {
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
                       "Cafe Au Lait" is a non-profit dance school based in Zurich.
-                      </Typography>
+                      </Typography><br />
+                      <Chip label="React" size="small"/>
+                      <Chip label="Node" size="small"/>
+                      <Chip label="Bootstrap" size="small"/>
                     </CardContent>
                     <CardActions>
-                      <Button size="small">Visit</Button>
+                      <Button size="small"><a href='https://www.cafeaulait.ch' target="_blank" rel="noreferrer">Visit</a></Button>
                     </CardActions>
                   </Card>
                 </Grid>
@@ -136,10 +148,10 @@ function About() {
                 <Grid xs>
                   <DemoPaper square elevation={0}>
                   <h3>Frontend</h3>
-                <div className="div-skills">
-                    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img alt="TypeScript" src="typescript.png" height={45} width={45}/></a>
-                    <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img alt="React" src="react.png" height={45} width={50}/></a>
-                </div>
+                  <div className="div-skills">
+                      <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img alt="TypeScript" src="typescript.png" height={45} width={45}/></a>
+                      <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img alt="React" src="react.png" height={45} width={50}/></a>
+                  </div>
                   </DemoPaper><br></br>
                 </Grid>
                 <Grid xs>
