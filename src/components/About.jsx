@@ -74,10 +74,12 @@ function About() {
                       <Typography variant="body2" color="text.secondary">
                         Publish-subscribe app leveraging the mosquitto message broker.
                       </Typography><br />
-                      <Chip label="TypeScript" size="small"/>
-                      <Chip label="Node" size="small"/>
-                      <Chip label="Docker" size="small"/>
-                      <Chip label="Mosquitto" size="small"/>
+                      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                        <Chip label="TypeScript" size="small" />
+                        <Chip label="Node" size="small" />
+                        <Chip label="Docker" size="small" />
+                        <Chip label="Mosquitto" size="small" />
+                      </Box>
                     </CardContent>
 
                     
@@ -103,9 +105,11 @@ function About() {
                       <Typography variant="body2" color="text.secondary">
                         Bus driver goes on an Impossible Mission to take the kids to school.
                       </Typography><br />
-                      <Chip label="HTML" size="small"/>
-                      <Chip label="CSS" size="small"/>
-                      <Chip label="JS DOM" size="small"/>
+                      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                        <Chip label="HTML" size="small"/>
+                        <Chip label="CSS" size="small"/>
+                        <Chip label="JS DOM" size="small"/>
+                      </Box>
                     </CardContent>
                     <CardActions>
                       <Button size="small"><a href='https://vntero.github.io/buszinga/' target="_blank" rel="noreferrer">Play</a></Button>
@@ -129,9 +133,11 @@ function About() {
                       <Typography variant="body2" color="text.secondary">
                       "Cafe Au Lait" is a non-profit dance school based in Zurich.
                       </Typography><br />
-                      <Chip label="React" size="small"/>
-                      <Chip label="Node" size="small"/>
-                      <Chip label="Bootstrap" size="small"/>
+                      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                        <Chip label="React" size="small"/>
+                        <Chip label="Node" size="small"/>
+                        <Chip label="Bootstrap" size="small"/>
+                      </Box>
                     </CardContent>
                     <CardActions>
                       <Button size="small"><a href='https://www.cafeaulait.ch' target="_blank" rel="noreferrer">Visit</a></Button>
