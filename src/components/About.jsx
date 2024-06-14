@@ -145,29 +145,36 @@ function About() {
             <h1>Skills</h1><br></br>
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={3}>
+                {/* Frontend */}
                 <Grid xs>
                   <DemoPaper square elevation={0}>
                   <h3>Frontend</h3>
                   <div className="div-skills">
                       <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img alt="TypeScript" src="typescript.png" height={45} width={45}/></a>
                       <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img alt="React" src="react.png" height={45} width={50}/></a>
-                      <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img alt="React" src="react.png" height={45} width={50}/></a>
-                  </div><br></br>
-                  <div className="div-skills">
-                      <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img alt="TypeScript" src="typescript.png" height={45} width={45}/></a>
-                      <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img alt="React" src="react.png" height={45} width={50}/></a>
-                  </div><br></br>
+                      <a href="https://svelte.dev/" target="_blank" rel="noreferrer"><img alt="Svelte" src="svelte.png" height={55} width={45}/></a>
+                  </div>
                   </DemoPaper><br></br>
                 </Grid>
+
+                {/* Backend */}
                 <Grid xs>
                   <DemoPaper square elevation={0}>
                   <h3>Backend</h3>
                   <div className="div-skills">
                     <a href="https://nodejs.org/" target="_blank" rel="noreferrer"><img alt="Node" src="node.png" height={50} width={80}/></a>
+                    <a href="https://jestjs.io/" target="_blank" rel="noreferrer"><img alt="Jest" src="jest.png" height={50} width={50}/></a>
                     <a href="https://go.dev" target="_blank" rel="noreferrer"><img alt="Go" src="go.png" height={35} width={85}/></a>
                 </div>
+                  <div className="div-skills">
+                  <a href="https://graphql.org/" target="_blank" rel="noreferrer"><img alt="AWS" src="gql.png" height={50} width={50}/></a>
+                    <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img alt="MongoDB" src="mongo.png" height={70} width={60}/></a>
+                    <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"><img alt="PostgreSQL" src="pgsql.png" height={50} width={50}/></a>
+                  </div><br></br>
                   </DemoPaper><br></br>
                 </Grid>
+
+                {/* Infrastructure */}
                 <Grid xs>
                   <DemoPaper square elevation={0}>
                     <h3>Infrastructure</h3>
