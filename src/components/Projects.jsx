@@ -161,7 +161,7 @@ function Projects() {
                     />
                     </Box>
             </div>
-    </div>
+        </div>
     )
 }
 

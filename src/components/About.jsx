@@ -9,47 +9,49 @@ function About() {
     return (
       <Container>
           {/* Introduction */}
-          <Stack spacing={4}>
-            <Grid container spacing={2} sx={{ minHeight: { xs: 'auto', md: '80vh' }, alignItems: 'center' }}>
-              
-              {/* Description */}
-              <Grid item xs={12} md={6} lg={6} sx={{ padding: { xs: 4, md: 0 } }}>
-                <Stack spacing={1} sx={{ paddingY: { xs: 4, md: 0 } }}>
-                  <Box sx={{ paddingX: 2 }}>
-                      <Balancer>
-                        <h1 className='h1-no-margin'>
-                          I'm a backend developer looking to build and collaborate on
-                          <span className="blue"> beautiful</span>, 
-                          <span className="red"> engaging</span>, and 
-                          <span className="green"> functional</span> projects for the world wide web.
-                        </h1>
-                      </Balancer>
-                  </Box>
-                </Stack>
-              </Grid>
+          <div className="div-hard-skills">
+            <Stack spacing={4}>
+              <Grid container spacing={2} sx={{ minHeight: { xs: 'auto', md: '60vh' }, alignItems: 'center' }}>
+                
+                {/* Description */}
+                <Grid item xs={12} md={6} lg={6} sx={{ padding: { xs: 4, md: 0 } }}>
+                  <Stack spacing={1} sx={{ paddingY: { xs: 4, md: 0 } }}>
+                    <Box sx={{ paddingX: 2 }}>
+                        <Balancer>
+                          <h1 className='h1-no-margin'>
+                            I'm a backend developer looking to build and collaborate on
+                            <span className="blue"> beautiful</span>, 
+                            <span className="red"> engaging</span>, and 
+                            <span className="green"> functional</span> projects for the world wide web.
+                          </h1>
+                        </Balancer>
+                    </Box>
+                  </Stack>
+                </Grid>
 
-              {/* Avatar, quotes and socials */}
-              <Grid item xs={12} md={6} lg={6} sx={{ padding: { xs: 4, md: 0 } }}>
-                <Stack spacing={1} sx={{ paddingY: { xs: 4, md: 0 } }}>
-                  <Box sx={{ paddingX: 2 }}>
-                    <Typography>
-                      <Balancer>
-                        <Avatar alt="Hugo Antero" src="headshot.png" sx={{ width: 80, height: 80 }} />
-                        <h3>Hugo Antero</h3>
-                        <Box sx={{ minWidth: 250 }}>
-                          <Card variant="outlined">{card}</Card>
-                        </Box><br></br>
-                          <a className='margin' href="https://github.com/vntero" target="_blank" rel="noreferrer"><img alt="github" src="github.png" height={35} width={35}/></a>
-                          <a className='margin' href="https://www.linkedin.com/in/vntero/" target="_blank" rel="noreferrer"><img alt="linkedin" src="linkedin.png" height={35} width={35}/></a>
-                          <a className='margin' href="mailto:hi@vntero.com"><img alt="email" src="email.png" height={35} width={35}/></a>
-                      </Balancer>
-                    </Typography>
-                  </Box>
-                </Stack>
-              </Grid>
+                {/* Avatar, quotes and socials */}
+                <Grid item xs={12} md={6} lg={6} sx={{ padding: { xs: 4, md: 0 } }}>
+                  <Stack spacing={1} sx={{ paddingY: { xs: 4, md: 0 } }}>
+                    <Box sx={{ paddingX: 2 }}>
+                      <Typography>
+                        <Balancer>
+                          <Avatar alt="Hugo Antero" src="headshot.png" sx={{ width: 80, height: 80 }} />
+                          <h3>Hugo Antero</h3>
+                          <Box sx={{ minWidth: 250 }}>
+                            <Card variant="outlined">{card}</Card>
+                          </Box><br></br>
+                            <a className='margin' href="https://github.com/vntero" target="_blank" rel="noreferrer"><img alt="github" src="github.png" height={35} width={35}/></a>
+                            <a className='margin' href="https://www.linkedin.com/in/vntero/" target="_blank" rel="noreferrer"><img alt="linkedin" src="linkedin.png" height={35} width={35}/></a>
+                            <a className='margin' href="mailto:hi@vntero.com"><img alt="email" src="email.png" height={35} width={35}/></a>
+                        </Balancer>
+                      </Typography>
+                    </Box>
+                  </Stack>
+                </Grid>
 
-            </Grid>
-          </Stack>
+              </Grid>
+            </Stack>
+          </div>
 
           {/* Favourite projects */}
           <div className="div-hard-skills">
