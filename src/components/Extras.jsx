@@ -18,7 +18,7 @@ export const card = (
 
 export const DemoPaper = styled(Paper)(({ theme }) => ({
   width: 320,
-  height: 120,
+  height: 220,
   padding: theme.spacing(2),
   ...theme.typography.body2,
   textAlign: 'center',
