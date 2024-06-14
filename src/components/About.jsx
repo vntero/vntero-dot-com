@@ -9,7 +9,7 @@ function About() {
     return (
       <Container>
           {/* Introduction */}
-          <div className="div-hard-skills">
+          <div>
             <Stack spacing={4}>
               <Grid container spacing={2} sx={{ minHeight: { xs: 'auto', md: '60vh' }, alignItems: 'center' }}>
                 
@@ -54,13 +54,13 @@ function About() {
           </div>
 
           {/* Favourite projects */}
-          <div className="div-hard-skills">
+          <div>
             <h1>Favourite projects</h1><br></br>
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={2} sx={{ minHeight: { xs: 'auto' }, alignItems: 'center' }}>
                 {/* Project 1 - PUB SUB*/}
                 <Grid item xs={12} sm={6} md={4}>
-                  <Card sx={{ maxWidth: 345 }}>
+                  <Card sx={{ maxWidth: 500 }}>
                     <CardMedia
                       component="img"
                       alt="green iguana"
@@ -91,7 +91,7 @@ function About() {
                 </Grid>
                 {/* Project 2 - BUSZINGA! */}
                 <Grid item xs={12} sm={6} md={4}>
-                  <Card sx={{ maxWidth: 345 }}>
+                  <Card sx={{ maxWidth: 500 }}>
                     <CardMedia
                       component="img"
                       alt="green iguana"
@@ -119,7 +119,7 @@ function About() {
                 </Grid>
                 {/* Project 3 - CAFE AU LAIT */}
                 <Grid item xs={12} sm={6} md={4}>
-                  <Card sx={{ maxWidth: 345 }}>
+                  <Card sx={{ maxWidth: 500 }}>
                     <CardMedia
                       component="img"
                       alt="green iguana"
@@ -149,7 +149,7 @@ function About() {
           </div>
 
           {/* Skills */}
-          <div className="div-hard-skills">
+          <div>
             <h1>Skills</h1><br></br>
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={3}>
