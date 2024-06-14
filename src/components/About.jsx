@@ -55,87 +55,75 @@ function About() {
           <div className="div-hard-skills">
             <h1>Favourite projects</h1><br></br>
             <Box sx={{ flexGrow: 1 }}>
-              <Grid container spacing={3} sx={{ minHeight: { xs: 'auto' }, alignItems: 'center' }}>
+              <Grid container spacing={2} sx={{ minHeight: { xs: 'auto' }, alignItems: 'center' }}>
                 {/* Project 1 */}
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardMedia
-                    component="img"
-                    alt="green iguana"
-                    height="140"
-                    image="pubsub.png"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Temp. monitoring pub-sub
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000
-                      species, ranging across all continents except Antarctica
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-                  </CardActions>
-                </Card>
+                <Grid item xs={12} sm={6} md={4}>
+                  <Card sx={{ maxWidth: 345 }}>
+                    <CardMedia
+                      component="img"
+                      alt="green iguana"
+                      height="140"
+                      image="pubsub.png"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        Temp. monitoring pub-sub
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        Publish-subscribe app leveraging the mosquitto message broker.
+                      </Typography>
+                    </CardContent>
+
+                    <CardActions>
+                      <Button size="small">Github</Button>
+                    </CardActions>
+                  </Card>
+                </Grid>
                 {/* Project 2 */}
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardMedia
-                    component="img"
-                    alt="green iguana"
-                    height="140"
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      JavaScript 2D racing game
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000
-                      species, ranging across all continents except Antarctica
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-                  </CardActions>
-                </Card>
+                <Grid item xs={12} sm={6} md={4}>
+                  <Card sx={{ maxWidth: 345 }}>
+                    <CardMedia
+                      component="img"
+                      alt="green iguana"
+                      height="140"
+                      image="buszinga.png"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        JavaScript 2D racing game
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                      You'll be taking the kids to school. Pick up batteries along the way so you don't run out of it.
+                      </Typography>
+                    </CardContent>
+                    <CardActions>
+                      <Button size="small">Open</Button>
+                      <Button size="small">Github</Button>
+                    </CardActions>
+                  </Card>
+                </Grid>
                 {/* Project 3 */}
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardMedia
-                    component="img"
-                    alt="green iguana"
-                    height="140"
-                    image="pubsub.png"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      cafeaulait.ch
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000
-                      species, ranging across all continents except Antarctica
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-                  </CardActions>
-                </Card>
-                {/* <Grid xs>
-                  <DemoPaper square>
-                    <img src='typescript.png' alt='test' style={{ width: 280, height: 280 }} />
-                    <h3>Temperature monitoring pub-sub</h3>
-                  </DemoPaper><br></br>
+                <Grid item xs={12} sm={6} md={4}>
+                  <Card sx={{ maxWidth: 345 }}>
+                    <CardMedia
+                      component="img"
+                      alt="green iguana"
+                      height="140"
+                      image="cafeaulait.png"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        cafeaulait.ch
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                      "Cafe Au Lait" is a non-profit dance school based in Zurich.
+                      </Typography>
+                    </CardContent>
+                    <CardActions>
+                      <Button size="small">Visit</Button>
+                    </CardActions>
+                  </Card>
                 </Grid>
-                <Grid xs>
-                  <DemoPaper square>
-                    <h3>JavaScript 2D racing game</h3>
-                  </DemoPaper><br></br>
-                </Grid>
-                <Grid xs>
-                  <DemoPaper square><h3>cafeaulait.ch</h3></DemoPaper><br></br>
-                </Grid> */}
               </Grid>
             </Box>          
           </div>
