@@ -37,10 +37,10 @@ function Footer() {
       <CssBaseline />
       <OvalPaper elevation={3}>
         <List>
-        <BottomNavigation showLabels value={value} onChange={(event, newValue) => { setValue(newValue)}}>
-        <BottomNavigationAction label="Hugo" component={Link} to="/"/>
-        <BottomNavigationAction label="Projects" component={Link} to="/projects"/>
-       </BottomNavigation>
+          <BottomNavigation showLabels value={value} onChange={(event, newValue) => {setValue(newValue)}}>
+            <BottomNavigationAction label="Hugo" component={Link} to="/"/>
+            <BottomNavigationAction label="Projects" component={Link} to="/projects"/>
+          </BottomNavigation>
         </List>
       </OvalPaper>
     </Box>

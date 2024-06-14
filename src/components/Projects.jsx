@@ -1,16 +1,16 @@
 import React from "react"
-import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import MobileStepper from '@mui/material/MobileStepper';
-import Paper from '@mui/material/Paper';
-import Button from '@mui/material/Button';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views';
+import { useTheme } from '@mui/material/styles'
+import Box from '@mui/material/Box'
+import MobileStepper from '@mui/material/MobileStepper'
+import Paper from '@mui/material/Paper'
+import Button from '@mui/material/Button'
+import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft'
+import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight'
+import SwipeableViews from 'react-swipeable-views'
 
-// import { autoPlay } from 'react-swipeable-views-utils';
+// import { autoPlay } from 'react-swipeable-views-utils'
 
-// const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+// const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
 
 export const images = [
 {
@@ -42,24 +42,24 @@ export const images = [
     source: <Button sx={{textTransform: 'lowercase' }}><a href="https://github.com/vntero/clique-client" target="_blank" rel="noreferrer">View source code</a></Button>,
     description: <p>"Clique" is a web app focused on the social aspect of competitive activities. Register yourself to find, join and /or create sport Groups and Events based on your location.</p>
   }
-];
+]
 
 function Projects() {
-    const theme = useTheme();
-    const [activeStep, setActiveStep] = React.useState(0);
-    const maxSteps = images.length;
+    const theme = useTheme()
+    const [activeStep, setActiveStep] = React.useState(0)
+    const maxSteps = images.length
 
     const handleNext = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    };
+        setActiveStep((prevActiveStep) => prevActiveStep + 1)
+    }
 
     const handleBack = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep - 1);
-    };
+        setActiveStep((prevActiveStep) => prevActiveStep - 1)
+    }
 
     const handleStepChange = (step) => {
-        setActiveStep(step);
-    };
+        setActiveStep(step)
+    }
     return (
 
         <div className="div-body">

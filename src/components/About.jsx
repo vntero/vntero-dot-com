@@ -6,7 +6,7 @@ import { styled } from '@mui/material/styles';
 import { Container, Grid, Box, Typography, Stack, CardActions, Button, Paper } from '@mui/material'
 import Balancer from 'react-wrap-balancer'
 
-const card = (
+export const card = (
   <React.Fragment>
     <CardContent>
       <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -19,7 +19,7 @@ const card = (
   </React.Fragment>
 )
 
-const DemoPaper = styled(Paper)(({ theme }) => ({
+export const DemoPaper = styled(Paper)(({ theme }) => ({
   width: 320,
   height: 320,
   padding: theme.spacing(2),
