@@ -5,7 +5,10 @@ export const quotes = [
   '"We must cultivate our garden." - Voltaire',
   '"We realize it best when we talk with an unliterary friend. He may be full of goodness and good sense but he inhabits a tiny world. In it, we should be suffocated. The man who is contented to be only himself, and therefore less a self, is in prison." - C.S. Lewis',
   '"My own eyes are not enough for me, I will see through those of others. Reality, even seen through the eyes of many, is not enough. I will see what others have invented." - C.S. Lewis',
-  '"Repetition and recollection are the same movement, except in opposite directions, for what is recollected has been, is repeated backward, whereas genuine repetition is recollected forward." - Kierkegaard'
+  '"Repetition and recollection are the same movement, except in opposite directions, for what is recollected has been, is repeated backward, whereas genuine repetition is recollected forward." - Kierkegaard',
+  '"I suffer from life and from other people. I cant look at reality face to face. Even the sun discourages and depresses me. Only at night and all alone, withdrawn, forgotten and lost, with no connection to anything real or useful — only then do I find myself and feel comforted." - Pessoa',
+  '“I am nothing. I will never be anything. I could not want to be something. Apart from that, I have in me all the dreams in the world.” - Pessoa',
+  '"There never was a more affectionate or tender soul than mine, a soul more filled with kindness, with compassion, with all that is tenderness and love. Yet no soul is as solitary as mine - solitary, mark you, not due to external circumstances but to internal ones." - Pessoa'
 ]
 
 export const DemoPaper = styled(Paper)(({ theme }) => ({
