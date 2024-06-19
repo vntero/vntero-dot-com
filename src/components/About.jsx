@@ -181,11 +181,13 @@ function About() {
                 <Grid xs>
                   <DemoPaper square elevation={0}>
                   <h3>Frontend</h3>
-                  <div className="div-skills">
+                    <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                       <Chip avatar={<Avatar src="typescript.png"></Avatar>} label="TypeScript"  />
                       <Chip avatar={<Avatar src="react.png"></Avatar>} label="React"  />
                       <Chip avatar={<Avatar src="svelte.png"></Avatar>} label="Svelte"  />
-                  </div>
+                      <Chip avatar={<Avatar src="jest.png"></Avatar>} label="Jest"  />
+                      <Chip avatar={<Avatar src="mui.png"></Avatar>} label="MaterialUI"  />
+                    </Box>
                   </DemoPaper><br></br>
                 </Grid>
 
@@ -193,16 +195,18 @@ function About() {
                 <Grid xs>
                   <DemoPaper square elevation={0}>
                   <h3>Backend</h3>
-                  <div className="div-skills">
-                    <Chip avatar={<Avatar src="node.png"></Avatar>} label="Node.js"  />
-                    <Chip avatar={<Avatar src="jest.png"></Avatar>} label="Jest"  />
-                    <Chip avatar={<Avatar src="go.png"></Avatar>} label="Go"  />
-                  </div>
-                  <div className="div-skills">
-                    <Chip avatar={<Avatar src="gql.png"></Avatar>} label="GraphQL"  />
-                    <Chip avatar={<Avatar src="mongo.png"></Avatar>} label="MongoDB"  />
-                    <Chip avatar={<Avatar src="pgsql.png"></Avatar>} label="PostreSQL"  />
-                  </div><br></br>
+                    <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                      <Chip avatar={<Avatar src="node.png"></Avatar>} label="Node.js"  />
+                      <Chip avatar={<Avatar src="jest.png"></Avatar>} label="Jest"  />
+                      <Chip avatar={<Avatar src="go.png"></Avatar>} label="Go"  />
+                      <Chip avatar={<Avatar src="gql.png"></Avatar>} label="GraphQL"  />
+                      <Chip avatar={<Avatar src="rest.png"></Avatar>} label="REST"  />
+                      <Chip avatar={<Avatar src="mongo.png"></Avatar>} label="MongoDB"  />
+                      <Chip avatar={<Avatar src="pgsql.png"></Avatar>} label="PostreSQL"  />
+                      <Chip avatar={<Avatar src="rabbit.png"></Avatar>} label="RabbitMQ"  />
+                      <Chip avatar={<Avatar src="sequelize.png"></Avatar>} label="Sequelize"  />
+                      <Chip avatar={<Avatar src="mongoose.png"></Avatar>} label="Mongoose"  />
+                    </Box>
                   </DemoPaper><br></br>
                 </Grid>
 
@@ -210,15 +214,13 @@ function About() {
                 <Grid xs>
                   <DemoPaper square elevation={0}>
                     <h3>Infrastructure</h3>
-                    <div className="div-skills">
-                      <Chip avatar={<Avatar src="docker.png"></Avatar>} label="Docker"  />
-                      <Chip avatar={<Avatar src="kubernetes.png"></Avatar>} label="Kubernetes"  />
-                      <Chip avatar={<Avatar src="aws.png"></Avatar>} label="AWS"  />
-                    </div>
-                    <div className="div-skills">
-                      <Chip avatar={<Avatar src="prometheus.png"></Avatar>} label="Prometheus"  />
-                      <Chip avatar={<Avatar src="sentry.png"></Avatar>} label="Sentry"  />
-                    </div><br></br>
+                      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                        <Chip avatar={<Avatar src="docker.png"></Avatar>} label="Docker"  />
+                        <Chip avatar={<Avatar src="kubernetes.png"></Avatar>} label="Kubernetes"  />
+                        <Chip avatar={<Avatar src="aws.png"></Avatar>} label="AWS"  />
+                        <Chip avatar={<Avatar src="prometheus.png"></Avatar>} label="Prometheus"  />
+                        <Chip avatar={<Avatar src="sentry.png"></Avatar>} label="Sentry"  />
+                      </Box>
                   </DemoPaper><br></br>
                 </Grid>
               </Grid>
