@@ -1,5 +1,5 @@
-import React from "react";
-import Card from "@mui/material/Card";
+import React from "react"
+import Card from "@mui/material/Card"
 import {
   Container,
   Grid,
@@ -10,7 +10,7 @@ import {
   CardActions,
   Button,
   Chip,
-} from "@mui/material";
+} from "@mui/material"
 
 function Projects() {
   return (
@@ -164,7 +164,7 @@ function Projects() {
         </Box>
       </div>
     </Container>
-  );
+  )
 }
 
-export default Projects;
+export default Projects

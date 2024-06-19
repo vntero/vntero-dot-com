@@ -1,11 +1,11 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import Paper from "@mui/material/Paper";
-import { styled } from "@mui/system";
-import BottomNavigation from "@mui/material/BottomNavigation";
-import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import { Link } from "react-router-dom";
+import * as React from "react"
+import Box from "@mui/material/Box"
+import CssBaseline from "@mui/material/CssBaseline"
+import Paper from "@mui/material/Paper"
+import { styled } from "@mui/system"
+import BottomNavigation from "@mui/material/BottomNavigation"
+import BottomNavigationAction from "@mui/material/BottomNavigationAction"
+import { Link } from "react-router-dom"
 
 const OvalPaper = styled(Paper)(({ theme }) => ({
   position: "fixed",
@@ -18,7 +18,7 @@ const OvalPaper = styled(Paper)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   padding: theme.spacing(1),
-}));
+}))
 
 const List = styled("ul")(({ theme }) => ({
   listStyle: "none",
@@ -28,10 +28,10 @@ const List = styled("ul")(({ theme }) => ({
   "& li": {
     margin: `0 ${theme.spacing(1)}px`,
   },
-}));
+}))
 
 function Footer() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(0)
   return (
     <Box>
       <CssBaseline />
@@ -41,7 +41,7 @@ function Footer() {
             showLabels
             value={value}
             onChange={(event, newValue) => {
-              setValue(newValue);
+              setValue(newValue)
             }}
           >
             <BottomNavigationAction label="Hugo" component={Link} to="/" />
@@ -54,7 +54,7 @@ function Footer() {
         </List>
       </OvalPaper>
     </Box>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

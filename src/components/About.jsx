@@ -1,6 +1,6 @@
-import Avatar from "@mui/material/Avatar";
-import React, { useState } from "react";
-import Card from "@mui/material/Card";
+import Avatar from "@mui/material/Avatar"
+import React, { useState } from "react"
+import Card from "@mui/material/Card"
 import {
   Container,
   Grid,
@@ -12,21 +12,21 @@ import {
   CardActions,
   Button,
   Chip,
-} from "@mui/material";
-import Balancer from "react-wrap-balancer";
-import { quotes, DemoPaper } from "./Helpers";
+} from "@mui/material"
+import Balancer from "react-wrap-balancer"
+import { quotes, DemoPaper } from "./Helpers"
 
 function About() {
-  const [quoteIndex, setQuoteIndex] = useState(0);
+  const [quoteIndex, setQuoteIndex] = useState(0)
 
   const handleQuotateClick = () => {
-    let newIndex;
+    let newIndex
 
     do {
-      newIndex = Math.floor(Math.random() * quotes.length);
-    } while (newIndex === quoteIndex);
-    setQuoteIndex(newIndex);
-  };
+      newIndex = Math.floor(Math.random() * quotes.length)
+    } while (newIndex === quoteIndex)
+    setQuoteIndex(newIndex)
+  }
 
   const card = (
     <React.Fragment>
@@ -41,7 +41,7 @@ function About() {
         </Button>
       </CardActions>
     </React.Fragment>
-  );
+  )
 
   return (
     <Container>
@@ -378,7 +378,7 @@ function About() {
         </Box>
       </div>
     </Container>
-  );
+  )
 }
 
-export default About;
+export default About

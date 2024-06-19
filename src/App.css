@@ -1,5 +1,5 @@
 .App {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .App-logo {
@@ -40,8 +40,8 @@
 .contact {
   padding-right: 25%;
   padding-left: 25%;
-   /* Apply different padding for different viewport sizes */
-   @media (max-width: 1000px) {
+  /* Apply different padding for different viewport sizes */
+  @media (max-width: 1000px) {
     padding: 50px; /* Adjust padding for smaller screens */
   }
 
@@ -61,7 +61,9 @@
   align-items: center;
 }
 
-a, a:focus, a:active{
+a,
+a:focus,
+a:active {
   text-decoration: none;
   color: inherit;
 }
@@ -72,7 +74,7 @@ input {
 
 .statement {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   width: 50%;
 }
 
@@ -89,7 +91,7 @@ input {
 }
 
 .blue {
-  color: #1C6DD0;
+  color: #1c6dd0;
 }
 
 .orange {
@@ -101,11 +103,11 @@ input {
 }
 
 .green {
-  color:seagreen;
+  color: seagreen;
 }
 
 .yellow {
-  color: #FFCC1D;
+  color: #ffcc1d;
 }
 
 .grey {
@@ -137,7 +139,7 @@ input {
   padding: 20px;
 }
 
-.div-thanks{
+.div-thanks {
   margin: 100px;
   align-items: center;
 }
@@ -161,7 +163,7 @@ input {
 }
 
 .h1-no-margin {
-  margin: 0
+  margin: 0;
 }
 
 .padded-bottom {

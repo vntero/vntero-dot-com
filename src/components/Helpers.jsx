@@ -1,5 +1,5 @@
-import { Paper } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Paper } from "@mui/material"
+import { styled } from "@mui/material/styles"
 
 export const quotes = [
   '"We realize it best when we talk with an unliterary friend. He may be full of goodness and good sense but he inhabits a tiny world. In it, we should be suffocated. The man who is contented to be only himself, and therefore less a self, is in prison." - C.S. Lewis',
@@ -17,11 +17,11 @@ export const quotes = [
   '"... the reason Emma Bovary grew so dissatisfied, unfairly so, with marriage – and therefore embarked on her disastrous affairs – was because of the books she had read." - Flaubert',
   '"What stops me from taking myself seriously, even though I’m essentially a serious person, is that I find myself extremely ridiculous, not the kind of small-scale ridiculousness of slapstick comedy, but rather a ridiculousness that seems intrinsic to human life and manifests itself in the simplest actions and most ordinary gestures. For example, I can never shave without starting to laugh, it seems so idiotic. All this is very difficult to explain..." - Flaubert',
   '"I’m no more modern than Ancient, no more French than Chinese, and the idea of a native country, that is to say, the imperative to live on one bit of ground marked red or blue on the map and to hate the other bits in green or black has always seemed to me narrow-minded, blinkered and profoundly stupid. I am a soul brother to everything that lives, to the giraffe and to the crocodile as much as to man." - Flaubert',
-];
+]
 
 export const DemoPaper = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(2),
   ...theme.typography.body2,
   textAlign: "center",
   elevation: 0,
-}));
+}))
