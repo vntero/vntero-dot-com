@@ -10,7 +10,9 @@ export const quotes = [
   '"I am nothing. I will never be anything. I could not want to be something. Apart from that, I have in me all the dreams in the world." - Pessoa',
   '"There never was a more affectionate or tender soul than mine, a soul more filled with kindness, with compassion, with all that is tenderness and love. Yet no soul is as solitary as mine - solitary, mark you, not due to external circumstances but to internal ones." - Pessoa',
   '"If one religion only were allowed in England, the Government would very possibly become arbitrary; if there were but two, the people would cut one another`s throats; but as there are such a multitude, they all live happy and in peace." - Voltaire',
-  '"Take a view of the Royal Exchange in London, a place more venerable than many courts of justice, where the representatives of all nations meet for the benefit of mankind.  There the Jew, the Mahometan, and the Christian transact together, as though they all professed the same religion, and give the name of infidel to none but bankrupts. There thee Presbyterian confides in the Anabaptist, and the Churchman depends on the Quaker`s word.  At the breaking up of this pacific and free assembly, some withdraw to the synagogue, and others to take a glass." - Voltaire'
+  '"Take a view of the Royal Exchange in London, a place more venerable than many courts of justice, where the representatives of all nations meet for the benefit of mankind.  There the Jew, the Mahometan, and the Christian transact together, as though they all professed the same religion, and give the name of infidel to none but bankrupts. There thee Presbyterian confides in the Anabaptist, and the Churchman depends on the Quaker`s word.  At the breaking up of this pacific and free assembly, some withdraw to the synagogue, and others to take a glass." - Voltaire',
+  '"Opinion rules the wolrd, but in the long run it is the philosophers who shape this opinion." - Voltaire',
+  '"If God had not existed, it would have been necessary to invent him." - Voltaire',
 ]
 
 export const DemoPaper = styled(Paper)(({ theme }) => ({
