@@ -14,6 +14,7 @@ export const quotes = [
   '"Opinion rules the world, but in the long run it is the philosophers who shape this opinion." - Voltaire',
   '"If God had not existed, it would have been necessary to invent him." - Voltaire',
   '"When I was very young and in the cave of Trophonius I forgot to laugh. Then, when I got older, when I opened my eyes and saw the real world, I began to laugh and I haven’t stopped since. I saw that the meaning of life was to get a livelihood, that the goal of life was to be a High Court judge, that the bright joy of love was to marry a well-off girl, that the blessing of friendship was to help each other out of a financial tight spot, that wisdom was what the majority said it was, that passion was to give a speech, that courage was to risk being fined 10 rix-dollars, that cordiality was to say ‘You’re welcome’ after a meal, and that the fear of God was to go to communion once a year. That’s what I saw. And I laughed." - Kiekegaard',
+  '"... the reason Emma Bovary grew so dissatisfied, unfairly so, with marriage – and therefore embarked on her disastrous affairs – was because of the books she had read." - Flaubert'
 ]
 
 export const DemoPaper = styled(Paper)(({ theme }) => ({
