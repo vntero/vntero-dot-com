@@ -43,7 +43,7 @@ export const OvalPaper = styled(Paper)(({ theme }) => ({
 export const HeaderPaper = styled(Paper)(({ theme }) => ({
   position: 'fixed',
   top: theme.spacing(2),
-  right: theme.spacing(2), // Position to the right of the screen
+  right: theme.spacing(2),
   width: 80,
   height: 60,
   display: 'flex',
