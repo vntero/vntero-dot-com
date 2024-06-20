@@ -1,3 +1,18 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark-mode {
+  --backgroud-color: #333333;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--backgroud-color);
+  color: var(--text-color);
+}
+
 .App {
   font-family: "Montserrat", sans-serif;
 }
