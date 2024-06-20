@@ -126,7 +126,7 @@ function Projects() {
               <Card sx={{ maxWidth: 500 }}>
                 <CardMedia
                   component="img"
-                  alt="green iguana"
+                  alt="Temperature "
                   height="140"
                   image="pubsub.png"
                 />
@@ -168,29 +168,26 @@ function Projects() {
                   component="img"
                   alt="QR code generator"
                   height="140"
-                  image="pubsub.png"
+                  image="qrcodegenerator.png"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Temp. monitoring app
+                    QR code generator
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Publish-subscribe app leveraging the mosquitto message
-                    broker.
+                    Enter a valid url and receive back a QR code.
                   </Typography>
                   <br />
                   <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
-                    <Chip label="TypeScript" size="small" />
+                    <Chip label="JavaScript" size="small" />
                     <Chip label="Node" size="small" />
-                    <Chip label="Docker" size="small" />
-                    <Chip label="Mosquitto" size="small" />
                   </Box>
                 </CardContent>
 
                 <CardActions>
                   <Button size="small">
                     <a
-                      href="https://github.com/vntero/temperature-monitoring-pub-sub"
+                      href="https://github.com/vntero/qr-code-generator"
                       target="_blank"
                       rel="noreferrer"
                     >
