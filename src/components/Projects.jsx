@@ -160,6 +160,46 @@ function Projects() {
                 </CardActions>
               </Card>
             </Grid>
+
+            {/* Project 2 - QR code generator*/}
+            <Grid item xs={12} sm={6} md={4}>
+              <Card sx={{ maxWidth: 500 }}>
+                <CardMedia
+                  component="img"
+                  alt="QR code generator"
+                  height="140"
+                  image="pubsub.png"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Temp. monitoring app
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Publish-subscribe app leveraging the mosquitto message
+                    broker.
+                  </Typography>
+                  <br />
+                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                    <Chip label="TypeScript" size="small" />
+                    <Chip label="Node" size="small" />
+                    <Chip label="Docker" size="small" />
+                    <Chip label="Mosquitto" size="small" />
+                  </Box>
+                </CardContent>
+
+                <CardActions>
+                  <Button size="small">
+                    <a
+                      href="https://github.com/vntero/temperature-monitoring-pub-sub"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Github
+                    </a>
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
           </Grid>
         </Box>
       </div>

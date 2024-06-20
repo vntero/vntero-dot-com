@@ -370,6 +370,14 @@ function About() {
                     avatar={<Avatar src="sentry.png"></Avatar>}
                     label="Sentry"
                   />
+                  <Chip
+                    avatar={<Avatar src="github.png"></Avatar>}
+                    label="Github"
+                  />
+                  <Chip
+                    avatar={<Avatar src="bitbucket.png"></Avatar>}
+                    label="Bitbucket"
+                  />
                 </Box>
               </DemoPaper>
               <br></br>
