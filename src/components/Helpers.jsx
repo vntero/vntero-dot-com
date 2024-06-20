@@ -40,6 +40,18 @@ export const OvalPaper = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
 }))
 
+export const HeaderPaper = styled(Paper)(({ theme }) => ({
+  position: 'fixed',
+  top: theme.spacing(2),
+  left: '50%',
+  transform: 'translateX(-50%)',
+  width: 80,
+  height: 60,
+  display: 'flex',
+  alignItems: 'center',
+  padding: theme.spacing(1),
+}))
+
 export const List = styled('ul')(({ theme }) => ({
   listStyle: 'none',
   display: 'flex',
