@@ -9,8 +9,9 @@ import Footer from "./components/Footer"
 import Projects from "./components/Projects"
 
 // dark theme
-import { ThemeProvider, createTheme } from "@mui/material/styles"
-import CssBaseline from "@mui/material/CssBaseline"
+// import { ThemeProvider } from "@mui/material/styles"
+import { createTheme } from "@mui/material/styles"
+// import CssBaseline from "@mui/material/CssBaseline"
 
 function App() {
   const darkTheme = createTheme({
