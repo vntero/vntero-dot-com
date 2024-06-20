@@ -50,6 +50,9 @@ export const HeaderPaper = styled(Paper)(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   padding: theme.spacing(1),
+  boxShadow: 'none',
+  backgroundColor: theme.palette.mode === 'dark' ? '#050505' : '#ffffff',
+  color: theme.palette.mode === 'dark' ? '#ffffff' : '#000000',
 }))
 
 export const List = styled('ul')(({ theme }) => ({
