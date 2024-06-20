@@ -277,19 +277,19 @@ function About() {
                 <h3>Frontend</h3>
                 <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
                   <Chip
-                    avatar={<Avatar src="typescript.png"></Avatar>}
+                    avatar={<Avatar src="typescript1.png"></Avatar>}
                     label="TypeScript"
                   />
                   <Chip
-                    avatar={<Avatar src="react.png"></Avatar>}
+                    avatar={<Avatar src="react1.png"></Avatar>}
                     label="React"
                   />
                   <Chip
-                    avatar={<Avatar src="svelte.png"></Avatar>}
+                    avatar={<Avatar src="svelte1.png"></Avatar>}
                     label="Svelte"
                   />
                   <Chip
-                    avatar={<Avatar src="jest.png"></Avatar>}
+                    avatar={<Avatar src="jest1.png"></Avatar>}
                     label="Jest"
                   />
                   <Chip
@@ -307,14 +307,14 @@ function About() {
                 <h3>Backend</h3>
                 <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
                   <Chip
-                    avatar={<Avatar src="node.png"></Avatar>}
+                    avatar={<Avatar src="node1.png"></Avatar>}
                     label="Node.js"
                   />
                   <Chip
-                    avatar={<Avatar src="jest.png"></Avatar>}
+                    avatar={<Avatar src="jest1.png"></Avatar>}
                     label="Jest"
                   />
-                  <Chip avatar={<Avatar src="go.png"></Avatar>} label="Go" />
+                  <Chip avatar={<Avatar src="go1.png"></Avatar>} label="Go" />
                   <Chip
                     avatar={<Avatar src="gql.png"></Avatar>}
                     label="GraphQL"
@@ -361,7 +361,7 @@ function About() {
                     avatar={<Avatar src="kubernetes.png"></Avatar>}
                     label="Kubernetes"
                   />
-                  <Chip avatar={<Avatar src="aws.png"></Avatar>} label="AWS" />
+                  <Chip avatar={<Avatar src="aws1.png"></Avatar>} label="AWS" />
                   <Chip
                     avatar={<Avatar src="prometheus.png"></Avatar>}
                     label="Prometheus"
