@@ -6,13 +6,15 @@ import { styled } from "@mui/system"
 import BottomNavigation from "@mui/material/BottomNavigation"
 import BottomNavigationAction from "@mui/material/BottomNavigationAction"
 import { Link } from "react-router-dom"
+import { IconButton } from "@mui/material"
+import { Brightness4 } from "@material-ui/icons"
 
 const OvalPaper = styled(Paper)(({ theme }) => ({
   position: "fixed",
   bottom: theme.spacing(2),
   left: "50%",
   transform: "translateX(-50%)",
-  width: 165,
+  width: 205,
   height: 60,
   display: "flex",
   justifyContent: "center",
@@ -45,6 +47,9 @@ function Footer() {
             }}
           >
             <BottomNavigationAction label="Hugo" component={Link} to="/" />
+            <IconButton>
+              <Brightness4 />
+            </IconButton>
             <BottomNavigationAction
               label="Projects"
               component={Link}
