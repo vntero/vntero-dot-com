@@ -1,17 +1,18 @@
 // essentials
-import "./App.css"
-import React, { useState } from "react"
-import { Routes, Route } from "react-router-dom"
+import './App.css'
+import React, { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 
 // components
-import About from "./components/About"
-import Footer from "./components/Footer"
-import Projects from "./components/Projects"
+import About from './components/About'
+import Header from './components/Header'
+import Projects from './components/Projects'
+import Footer from './components/Footer'
 
 // dark theme
-import { ThemeProvider } from "@mui/material/styles"
-import { createTheme } from "@mui/material/styles"
-import CssBaseline from "@mui/material/CssBaseline"
+import { ThemeProvider } from '@mui/material/styles'
+import { createTheme } from '@mui/material/styles'
+import CssBaseline from '@mui/material/CssBaseline'
 
 function App() {
   // state to manage dark mode
@@ -24,12 +25,12 @@ function App() {
 
   const darkTheme = createTheme({
     palette: {
-      mode: toggleDarkMode ? "light" : "dark",
+      mode: toggleDarkMode ? 'light' : 'dark',
       primary: {
-        main: "#1976d2",
+        main: '#1976d2',
       },
       secondary: {
-        main: "#f48fb1",
+        main: '#f48fb1',
       },
     },
   })
@@ -38,15 +39,16 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <div className="App">
+        <Header
+          toggleDarkMode={toggleDarkMode}
+          toggleDarkTheme={toggleDarkTheme}
+        />
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
-        <Footer
-          toggleDarkMode={toggleDarkMode}
-          toggleDarkTheme={toggleDarkTheme}
-        />
+        <Footer />
       </div>
     </ThemeProvider>
   )

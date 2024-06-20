@@ -9,7 +9,7 @@ import { List } from './Helpers'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import { MaterialUISwitch } from './Helpers'
 
-function Footer({ toggleDarkMode, toggleDarkTheme }) {
+function Header({ toggleDarkMode, toggleDarkTheme }) {
   const [value, setValue] = React.useState(0)
 
   return (
@@ -42,4 +42,4 @@ function Footer({ toggleDarkMode, toggleDarkTheme }) {
   )
 }
 
-export default Footer
+export default Header
