@@ -26,18 +26,18 @@ function App() {
   })
 
   return (
-    <ThemeProvider theme={darkTheme}>
-      <CssBaseline />
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
+    // <ThemeProvider theme={darkTheme}>
+    //   <CssBaseline />
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
 
-        <Footer />
-      </div>
-    </ThemeProvider>
+      <Footer />
+    </div>
+    // </ThemeProvider>
   )
 }
 
