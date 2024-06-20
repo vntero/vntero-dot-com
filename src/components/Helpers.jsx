@@ -25,3 +25,26 @@ export const DemoPaper = styled(Paper)(({ theme }) => ({
   textAlign: "center",
   elevation: 0,
 }))
+
+export const OvalPaper = styled(Paper)(({ theme }) => ({
+  position: "fixed",
+  bottom: theme.spacing(2),
+  left: "50%",
+  transform: "translateX(-50%)",
+  width: 165,
+  height: 60,
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  padding: theme.spacing(1),
+}))
+
+export const List = styled("ul")(({ theme }) => ({
+  listStyle: "none",
+  display: "flex",
+  margin: 0,
+  padding: 0,
+  "& li": {
+    margin: `0 ${theme.spacing(1)}px`,
+  },
+}))
