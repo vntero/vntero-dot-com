@@ -95,7 +95,7 @@ function About() {
                       >
                         <img
                           alt="github"
-                          src="github.png"
+                          src="github1.png"
                           height={35}
                           width={35}
                         />
@@ -108,7 +108,7 @@ function About() {
                       >
                         <img
                           alt="linkedin"
-                          src="linkedin.png"
+                          src="linkedin1.png"
                           height={35}
                           width={35}
                         />
@@ -116,7 +116,7 @@ function About() {
                       <a className="margin" href="mailto:hi@vntero.com">
                         <img
                           alt="email"
-                          src="email.png"
+                          src="email1.png"
                           height={35}
                           width={35}
                         />
@@ -371,7 +371,7 @@ function About() {
                     label="Sentry"
                   />
                   <Chip
-                    avatar={<Avatar src="github.png"></Avatar>}
+                    avatar={<Avatar src="github1.png"></Avatar>}
                     label="Github"
                   />
                   <Chip
