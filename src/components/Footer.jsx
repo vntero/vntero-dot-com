@@ -6,10 +6,8 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction'
 import { Link } from 'react-router-dom'
 import { OvalPaper } from './Helpers'
 import { List } from './Helpers'
-import FormControlLabel from '@mui/material/FormControlLabel'
-import { MaterialUISwitch } from './Helpers'
 
-function Footer({ toggleDarkMode, toggleDarkTheme }) {
+function Footer() {
   const [value, setValue] = React.useState(0)
 
   return (
@@ -32,11 +30,6 @@ function Footer({ toggleDarkMode, toggleDarkTheme }) {
             />
           </BottomNavigation>
         </List>
-        <FormControlLabel
-          control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
-          checked={toggleDarkMode}
-          onChange={toggleDarkTheme}
-        />
       </OvalPaper>
     </Box>
   )
