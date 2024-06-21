@@ -300,6 +300,10 @@ function About() {
                     avatar={<Avatar src="mui.png"></Avatar>}
                     label="MaterialUI"
                   />
+                  <Chip
+                    avatar={<Avatar src="tailwind.png"></Avatar>}
+                    label="Tailwind CSS"
+                  />
                 </Box>
               </DemoPaper>
               <br></br>
