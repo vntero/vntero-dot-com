@@ -18,7 +18,7 @@ function Projects() {
       <div className="padded-bottom">
         <br></br>
         <Typography gutterBottom variant="h3" component="div">
-          Favourite projects
+          All projects
         </Typography>
         <br></br>
         <br></br>
