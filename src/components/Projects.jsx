@@ -1,5 +1,5 @@
-import React from "react"
-import Card from "@mui/material/Card"
+import React from 'react'
+import Card from '@mui/material/Card'
 import {
   Container,
   Grid,
@@ -10,22 +10,28 @@ import {
   CardActions,
   Button,
   Chip,
-} from "@mui/material"
+} from '@mui/material'
 
 function Projects() {
   return (
     <Container>
       <div className="padded-bottom">
-        <h1>All projects</h1>
+        <br></br>
+        <Typography gutterBottom variant="h3" component="div">
+          Favourite projects
+        </Typography>
+        <br></br>
         <br></br>
         {/* Frontend projects */}
         <Box sx={{ flexGrow: 1 }}>
-          <h2>Frontend</h2>
+          <Typography gutterBottom variant="h4" component="div">
+            Frontend
+          </Typography>
           <br></br>
           <Grid
             container
             spacing={2}
-            sx={{ minHeight: { xs: "auto" }, alignItems: "center" }}
+            sx={{ minHeight: { xs: 'auto' }, alignItems: 'center' }}
           >
             {/* Project 2 - BUSZINGA! */}
             <Grid item xs={12} sm={6} md={4}>
@@ -37,7 +43,7 @@ function Projects() {
                   image="buszinga.png"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography gutterBottom variant="h6" component="div">
                     2D racing game
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
@@ -45,7 +51,7 @@ function Projects() {
                     school.
                   </Typography>
                   <br />
-                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                     <Chip label="HTML" size="small" />
                     <Chip label="CSS" size="small" />
                     <Chip label="JS DOM" size="small" />
@@ -83,14 +89,14 @@ function Projects() {
                   image="cafeaulait.png"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography gutterBottom variant="h6" component="div">
                     cafeaulait.ch
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     "Cafe Au Lait" is a non-profit dance school based in Zurich.
                   </Typography>
                   <br />
-                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                     <Chip label="React" size="small" />
                     <Chip label="Node" size="small" />
                     <Chip label="Bootstrap" size="small" />
@@ -114,12 +120,17 @@ function Projects() {
 
         {/* Backend projects */}
         <Box sx={{ flexGrow: 1 }}>
-          <h2>Backend</h2>
+          <br></br>
+          <br></br>
+          <br></br>
+          <Typography gutterBottom variant="h4" component="div">
+            Backend
+          </Typography>
           <br></br>
           <Grid
             container
             spacing={2}
-            sx={{ minHeight: { xs: "auto" }, alignItems: "center" }}
+            sx={{ minHeight: { xs: 'auto' }, alignItems: 'center' }}
           >
             {/* Project 1 - PUB SUB*/}
             <Grid item xs={12} sm={6} md={4}>
@@ -131,7 +142,7 @@ function Projects() {
                   image="pubsub.png"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography gutterBottom variant="h6" component="div">
                     Temp. monitoring app
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
@@ -139,7 +150,7 @@ function Projects() {
                     broker.
                   </Typography>
                   <br />
-                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                     <Chip label="TypeScript" size="small" />
                     <Chip label="Node" size="small" />
                     <Chip label="Docker" size="small" />
@@ -171,14 +182,14 @@ function Projects() {
                   image="qrcodegenerator.png"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography gutterBottom variant="h6" component="div">
                     QR code generator
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     Enter a valid url and receive back a QR code.
                   </Typography>
                   <br />
-                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                     <Chip label="JavaScript" size="small" />
                     <Chip label="Node" size="small" />
                   </Box>

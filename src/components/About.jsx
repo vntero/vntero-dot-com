@@ -1,6 +1,6 @@
-import Avatar from "@mui/material/Avatar"
-import React, { useState } from "react"
-import Card from "@mui/material/Card"
+import Avatar from '@mui/material/Avatar'
+import React, { useState } from 'react'
+import Card from '@mui/material/Card'
 import {
   Container,
   Grid,
@@ -12,9 +12,9 @@ import {
   CardActions,
   Button,
   Chip,
-} from "@mui/material"
-import Balancer from "react-wrap-balancer"
-import { quotes, DemoPaper } from "./Helpers"
+} from '@mui/material'
+import Balancer from 'react-wrap-balancer'
+import { quotes, DemoPaper } from './Helpers'
 
 function About() {
   const [quoteIndex, setQuoteIndex] = useState(0)
@@ -51,7 +51,7 @@ function About() {
           <Grid
             container
             spacing={2}
-            sx={{ minHeight: { xs: "auto", md: "60vh" }, alignItems: "center" }}
+            sx={{ minHeight: { xs: 'auto', md: '60vh' }, alignItems: 'center' }}
           >
             {/* Description */}
             <Grid item xs={12} md={6} lg={6} sx={{ padding: { xs: 4, md: 0 } }}>
@@ -132,13 +132,15 @@ function About() {
 
       {/* Favourite projects */}
       <div className="padded-bottom">
-        <h1>Favourite projects</h1>
+        <Typography gutterBottom variant="h3" component="div">
+          Favourite projects
+        </Typography>
         <br></br>
         <Box sx={{ flexGrow: 1 }}>
           <Grid
             container
             spacing={2}
-            sx={{ minHeight: { xs: "auto" }, alignItems: "center" }}
+            sx={{ minHeight: { xs: 'auto' }, alignItems: 'center' }}
           >
             {/* Project 1 - PUB SUB*/}
             <Grid item xs={12} sm={6} md={4}>
@@ -150,7 +152,7 @@ function About() {
                   image="pubsub.png"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography gutterBottom variant="h6" component="div">
                     Temp. monitoring app
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
@@ -158,7 +160,7 @@ function About() {
                     broker.
                   </Typography>
                   <br />
-                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                     <Chip label="TypeScript" size="small" />
                     <Chip label="Node" size="small" />
                     <Chip label="Docker" size="small" />
@@ -189,7 +191,7 @@ function About() {
                   image="buszinga.png"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography gutterBottom variant="h6" component="div">
                     2D racing game
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
@@ -197,7 +199,7 @@ function About() {
                     school.
                   </Typography>
                   <br />
-                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                     <Chip label="HTML" size="small" />
                     <Chip label="CSS" size="small" />
                     <Chip label="JS DOM" size="small" />
@@ -235,14 +237,14 @@ function About() {
                   image="cafeaulait.png"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography gutterBottom variant="h6" component="div">
                     cafeaulait.ch
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     "Cafe Au Lait" is a non-profit dance school based in Zurich.
                   </Typography>
                   <br />
-                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                     <Chip label="React" size="small" />
                     <Chip label="Node" size="small" />
                     <Chip label="Bootstrap" size="small" />
@@ -267,7 +269,9 @@ function About() {
 
       {/* Skills */}
       <div className="padded-bottom">
-        <h1>Skills</h1>
+        <Typography gutterBottom variant="h3" component="div">
+          Skills
+        </Typography>
         <br></br>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={3}>
@@ -275,7 +279,7 @@ function About() {
             <Grid xs>
               <DemoPaper square elevation={0}>
                 <h3>Frontend</h3>
-                <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                   <Chip
                     avatar={<Avatar src="typescript1.png"></Avatar>}
                     label="TypeScript"
@@ -305,7 +309,7 @@ function About() {
             <Grid xs>
               <DemoPaper square elevation={0}>
                 <h3>Backend</h3>
-                <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                   <Chip
                     avatar={<Avatar src="node1.png"></Avatar>}
                     label="Node.js"
@@ -352,7 +356,7 @@ function About() {
             <Grid xs>
               <DemoPaper square elevation={0}>
                 <h3>Infrastructure</h3>
-                <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                   <Chip
                     avatar={<Avatar src="docker.png"></Avatar>}
                     label="Docker"
