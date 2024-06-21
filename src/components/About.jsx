@@ -59,7 +59,7 @@ function About() {
                 <Box sx={{ paddingX: 2 }}>
                   <Balancer>
                     <h1 className="h1-no-margin">
-                      I'm a backend developer looking to build and collaborate
+                      I'm a software developer looking to build and collaborate
                       on
                       <span className="blue"> beautiful</span>,
                       <span className="red"> engaging</span>, and
