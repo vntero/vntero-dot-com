@@ -214,29 +214,30 @@ function Projects() {
               <Card sx={{ maxWidth: 500 }}>
                 <CardMedia
                   component="img"
-                  alt="QR code generator"
+                  alt="Car dealer CLI"
                   height="140"
-                  image="qrcodegenerator.png"
+                  image="cardealercli.png"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h6" component="div">
                     Car dealer CLI
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    A small JavaScript command line function that reads data
-                    from a csv file to return a computed feedback.
+                    A small command line app that reads data from a csv file to
+                    return a computed feedback.
                   </Typography>
                   <br />
                   <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                     <Chip label="JavaScript" size="small" />
                     <Chip label="Node" size="small" />
+                    <Chip label="Commander" size="small" />
                   </Box>
                 </CardContent>
 
                 <CardActions>
                   <Button size="small">
                     <a
-                      href="https://github.com/vntero/qr-code-generator"
+                      href="https://github.com/vntero/car-dealer-cli"
                       target="_blank"
                       rel="noreferrer"
                     >
