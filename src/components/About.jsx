@@ -340,6 +340,10 @@ function About() {
                     label="PostreSQL"
                   />
                   <Chip
+                    avatar={<Avatar src="serverless.png"></Avatar>}
+                    label="Serverless"
+                  />
+                  <Chip
                     avatar={<Avatar src="rabbit.png"></Avatar>}
                     label="RabbitMQ"
                   />
