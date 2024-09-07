@@ -281,10 +281,6 @@ function About() {
                 <h3>Frontend</h3>
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                   <Chip
-                    avatar={<Avatar src="typescript1.png"></Avatar>}
-                    label="TypeScript"
-                  />
-                  <Chip
                     avatar={<Avatar src="react1.png"></Avatar>}
                     label="React"
                   />
@@ -293,16 +289,16 @@ function About() {
                     label="Svelte"
                   />
                   <Chip
-                    avatar={<Avatar src="jest1.png"></Avatar>}
-                    label="Jest"
+                    avatar={<Avatar src="tailwind.png"></Avatar>}
+                    label="Tailwind CSS"
+                  />
+                  <Chip
+                    avatar={<Avatar src="vite.png"></Avatar>}
+                    label="Vite"
                   />
                   <Chip
                     avatar={<Avatar src="mui.png"></Avatar>}
-                    label="MaterialUI"
-                  />
-                  <Chip
-                    avatar={<Avatar src="tailwind.png"></Avatar>}
-                    label="Tailwind CSS"
+                    label="Material UI"
                   />
                 </Box>
               </DemoPaper>
@@ -314,15 +310,19 @@ function About() {
               <DemoPaper square elevation={0}>
                 <h3>Backend</h3>
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                  <Chip avatar={<Avatar src="go1.png"></Avatar>} label="Go" />
                   <Chip
                     avatar={<Avatar src="node1.png"></Avatar>}
                     label="Node.js"
                   />
                   <Chip
+                    avatar={<Avatar src="typescript1.png"></Avatar>}
+                    label="TypeScript"
+                  />
+                  <Chip
                     avatar={<Avatar src="jest1.png"></Avatar>}
                     label="Jest"
                   />
-                  <Chip avatar={<Avatar src="go1.png"></Avatar>} label="Go" />
                   <Chip
                     avatar={<Avatar src="gql.png"></Avatar>}
                     label="GraphQL"
