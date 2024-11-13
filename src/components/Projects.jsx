@@ -247,6 +247,47 @@ function Projects() {
                 </CardActions>
               </Card>
             </Grid>
+
+            {/* Project 4 - Server written in Go to handle form submissions*/}
+            <Grid item xs={12} sm={6} md={4}>
+              <Card sx={{ maxWidth: 500 }}>
+                <CardMedia
+                  component="img"
+                  alt="Car dealer CLI"
+                  height="140"
+                  image="formHandlerGo.png"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h6" component="div">
+                    Forms handler server
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    A server written in Go that receives form submissions,
+                    renders it to HTML, and sends it via email.
+                  </Typography>
+                  <br />
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                    <Chip label="Go" size="small" />
+                    <Chip label="Docker" size="small" />
+                    <Chip label="AWS" size="small" />
+                    <Chip label="Github Actions" size="small" />
+                    <Chip label="CI/CD" size="small" />
+                  </Box>
+                </CardContent>
+
+                <CardActions>
+                  <Button size="small">
+                    <a
+                      href="https://github.com/vntero/cafeaulait-server"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Github
+                    </a>
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
           </Grid>
         </Box>
       </div>
