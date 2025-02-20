@@ -248,6 +248,7 @@ function About() {
                     <Chip label="Svelte" size="small" />
                     <Chip label="Tailwind" size="small" />
                     <Chip label="Netlify" size="small" />
+                    <Chip label="Docker" size="small" />
                     <Chip label="Go" size="small" />
                     <Chip label="AWS" size="small" />
                   </Box>
