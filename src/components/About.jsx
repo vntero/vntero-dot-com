@@ -241,13 +241,15 @@ function About() {
                     cafeaulait.ch
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    "Cafe Au Lait" is a non-profit dance school based in Zurich.
+                    African dance school in Zurich.
                   </Typography>
                   <br />
                   <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
-                    <Chip label="React" size="small" />
-                    <Chip label="Node" size="small" />
-                    <Chip label="Bootstrap" size="small" />
+                    <Chip label="Svelte" size="small" />
+                    <Chip label="Tailwind" size="small" />
+                    <Chip label="Netlify" size="small" />
+                    <Chip label="Go" size="small" />
+                    <Chip label="AWS" size="small" />
                   </Box>
                 </CardContent>
                 <CardActions>
@@ -258,6 +260,15 @@ function About() {
                       rel="noreferrer"
                     >
                       Visit
+                    </a>
+                  </Button>
+                  <Button size="small">
+                    <a
+                      href="https://github.com/vntero/cafeaulait"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Github
                     </a>
                   </Button>
                 </CardActions>
